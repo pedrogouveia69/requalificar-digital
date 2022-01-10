@@ -44,12 +44,7 @@
 
         public override double getPerimeter()
         {
-            double perimeter = 0;
-            perimeter += getTriangleBase();
-            perimeter += a.getDistanceTo(b);
-            perimeter += b.getDistanceTo(c);
-
-            return perimeter;
+            return getTriangleBase() + a.getDistanceTo(b) + b.getDistanceTo(c);
         }
 
     }
