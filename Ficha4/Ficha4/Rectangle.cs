@@ -1,6 +1,6 @@
 ﻿namespace Ficha4
 {
-    internal class Rectangle
+    public class Rectangle : Shape
     {
         private Point topLeftPoint;
         private double height;
@@ -23,12 +23,12 @@
         public double Height { get { return height; } set { height = value; } }
         public double Width { get { return width; } set { width = value; } }
 
-        public double calculateArea()
+        public override double getArea()
         {
             return height * width;  
         }
 
-        public double calculatePerimeter() 
+        public override double getPerimeter() 
         {
             return (height * 2) + (width * 2); 
         

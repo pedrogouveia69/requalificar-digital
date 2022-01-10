@@ -1,6 +1,6 @@
 ﻿namespace Ficha4
 {
-    internal class Triangle
+    public class Triangle : Shape
     {
         private Point a;
         private Point b;
@@ -29,18 +29,29 @@
 
         public double getTriangleBase() 
         {
-            return this.b.getDistanceTo(this.c);
+            return b.getDistanceTo(c);
         }
 
         public double getTriangleHeigth()
         {
-            return this.b.getDistanceTo(this.a);
+            return b.getDistanceTo(a);
         }
 
-        public double calculateTriangleArea()
+        public override double getArea()
         {
             return getTriangleBase() * getTriangleHeigth() / 2;
         }
+
+        public override double getPerimeter()
+        {
+            double perimeter = 0;
+            perimeter += getTriangleBase();
+            perimeter += a.getDistanceTo(b);
+            perimeter += b.getDistanceTo(c);
+
+            return perimeter;
+        }
+
     }
 
 }

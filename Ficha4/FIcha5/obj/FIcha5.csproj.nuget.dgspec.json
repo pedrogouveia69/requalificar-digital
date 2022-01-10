@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net04\\source\\repos\\Ficha4\\FIcha5\\FIcha5.csproj": {}
+    "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net04\\source\\repos\\Ficha4\\FIcha5\\FIcha5.csproj": {
+    "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\source\\repos\\Ficha4\\FIcha5\\FIcha5.csproj",
-        "projectName": "FIcha5",
-        "projectPath": "C:\\Users\\Net04\\source\\repos\\Ficha4\\FIcha5\\FIcha5.csproj",
+        "projectUniqueName": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj",
+        "projectName": "Ficha5",
+        "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj",
         "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\source\\repos\\Ficha4\\FIcha5\\obj\\",
+        "outputPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",

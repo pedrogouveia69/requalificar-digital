@@ -1,6 +1,6 @@
 ﻿namespace Ficha4
 {
-    internal class Point
+    public class Point
     {
         private double x;
         private double y;
@@ -28,6 +28,11 @@
         public double getDistanceTo(Point other) 
         {
             return Math.Sqrt(Math.Pow((other.x - this.x), 2) + Math.Pow((other.y - this.y), 2));
+        }
+
+        public override string ToString()
+        {
+            return "X: " + x + " Y: " + y;
         }
     }
 }

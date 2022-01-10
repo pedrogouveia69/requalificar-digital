@@ -1,18 +1,18 @@
 ﻿using Ficha4;
 
-var p1 = new Point(5, 10);
-var p2 = new Point(1, 6);
-var p3 = new Point(2, 3);
-
-//Console.WriteLine(p1.getDistanceTo(p2));
-
-var t1 = new Triangle(p1, p2, p3);
-//Console.WriteLine(t1.A.X + " " + t1.A.Y);
+var a = new Point(0, 0);
+var b = new Point(2.5, 5);
+var c = new Point(5, 0);
+//Console.WriteLine(a.getDistanceTo(b));
 
 var topLeftPoint = new Point(0, 5);
-var r1 = new Rectangle(topLeftPoint, 5, 5);
+var r = new Rectangle(topLeftPoint, 5, 5);
+//Console.WriteLine(r.contains(new Point(1, 4)));
 
-//Console.WriteLine(r1.calculatePerimeter());
+var t = new Triangle(a, b, c);
+//Console.WriteLine(t.A.X + " " + t.A.Y)
 
+Console.WriteLine(t.getPerimeter());   
 
-Console.WriteLine(r1.contains(new Point(1, 4)));
+var circle = new Circle(a, 5);
+Console.WriteLine(circle.ToString());
