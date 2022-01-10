@@ -1,0 +1,15 @@
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\bin\Debug\net6.0\ExsUnipartner.exe
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\bin\Debug\net6.0\ExsUnipartner.deps.json
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\bin\Debug\net6.0\ExsUnipartner.runtimeconfig.json
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\bin\Debug\net6.0\ExsUnipartner.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\bin\Debug\net6.0\ref\ExsUnipartner.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\bin\Debug\net6.0\ExsUnipartner.pdb
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.csproj.AssemblyReference.cache
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.AssemblyInfoInputs.cache
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.AssemblyInfo.cs
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.csproj.CoreCompileInputs.cache
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ref\ExsUnipartner.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.pdb
+C:\Users\Net04\Documents\GitHub\dev_web_apps\ExsUnipartner\ExsUnipartner\obj\Debug\net6.0\ExsUnipartner.genruntimeconfig.cache
