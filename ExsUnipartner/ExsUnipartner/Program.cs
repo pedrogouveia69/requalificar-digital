@@ -17,3 +17,6 @@ d1.Data = "12/02/2019";
 d1.Hora = "19:45";
 d1.on();
 
+var arroz = new Produto("detalhes do arroz", 2, 0.05f, 200);
+var massa = new Produto("detalhes da massa", 2, 0, 0);
+

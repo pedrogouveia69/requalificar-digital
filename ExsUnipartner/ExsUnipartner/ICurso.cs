@@ -3,7 +3,7 @@
     public interface ICurso
     {
         public string obterNomeCurso();
-        public string obterDisciplinas();
+        public List<string> obterDisciplinas();
         public int obterAnoCurso();
         public string obterResumoMateria();
     }
