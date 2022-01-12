@@ -1,5 +1,6 @@
 ﻿using ExsUnipartner;
 
+/*
 var c1 = new Cao("12/02/2019", "Bobby", 15);
 var c2 = new Cao("8/02/2019", "Jack", 25);
 
@@ -29,6 +30,7 @@ Console.WriteLine(automovel.TipoCombustivel);
 var navio = new Navio(false, 0);
 navio.ligar();
 
+*/
 
 
 
