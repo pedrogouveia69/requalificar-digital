@@ -1,14 +1,15 @@
 ﻿namespace ExsUnipartner
 {
-    public class Despertador
+    public static class Despertador
     {
-        private bool estado;
-        private string data;
-        private string hora;
-        public void on() { estado = true; }
-        public void off() { estado = false; }
-        public string Data { set { data = value; } }
-        public string Hora { set { hora = value; } }
+        private static bool estado;
+        private static string data;
+        private static string hora;
+
+        public static void on() { estado = true; }
+        public static void off() { estado = false; }
+        public static string Data { set { data = value; } }
+        public static string Hora { set { hora = value; } }
 
     }
 }

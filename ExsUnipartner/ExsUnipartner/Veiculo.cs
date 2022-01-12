@@ -2,22 +2,28 @@
 {
     public abstract class Veiculo
     {
-        private bool _estado;
+        private bool estado;
+        public int velocidadeAtual;
 
-        public string ligar()
+        public Veiculo(bool estado, int velocidadeAtual)
         {
-            _estado = true;
+            this.estado = estado;
+            this.velocidadeAtual = velocidadeAtual;
+        }
+
+        public bool Estado { get { return estado; } set { estado = value; } }
+
+        public virtual string ligar()
+        {
+            estado = true;
             return "Ligado com sucesso";
         }
         public string desligar()
         {
-            _estado = false;
+            estado = false;
             return "Desligado com sucesso";
         }
-        public bool estado()
-        {
-            return _estado;
-        }
-        public abstract int velocidadeAtual();
+
+        public abstract int getVelocidadeAtual();
     }
 }
