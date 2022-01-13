@@ -1,4 +1,7 @@
-﻿namespace Ficha4
+﻿using Ficha4;
+
+namespace Ficha5
+
 {
     public class Figure
     {
@@ -8,12 +11,11 @@
         {
             shapes = new List<Shape>();
         }
-
-        public Figure(List<Shape> shapes)
+        public void Add(Shape shape)
         {
-            this.shapes = shapes;
+            shapes.Add(shape);
         }
 
-        public List<Shape> Shapes { get { return shapes; } set { shapes = value; } }
+        public List<Shape> Shapes { get { return shapes; } }
     }
 }

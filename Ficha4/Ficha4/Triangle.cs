@@ -2,28 +2,28 @@
 {
     public class Triangle : Shape
     {
-        private Point a;
         private Point b;
         private Point c;
-        public Triangle()
-        {
-            a = new Point();
+        
+        public Triangle() : base()
+        { 
             b = new Point();
             c = new Point();
         }
-
-        public Triangle(Point a, Point b, Point c) { 
-            this.a = a;
-            this.b = b;
-            this.c = c;
-        }
-        public void setABC(Point a, Point b, Point c) {
-            this.a = a;
+        
+        public Triangle(Point position, Point b, Point c) : base(position)
+        { 
             this.b = b;
             this.c = c;
         }
 
-        public Point A { get { return a; } set { a = value; } }
+        public void setABC(Point a, Point b, Point c) 
+        {
+            Position = a;
+            this.b = b;
+            this.c = c;
+        }
+
         public Point B { get { return b; } set { b = value; } }
         public Point C { get { return c; } set { c = value; } }
 
@@ -34,7 +34,7 @@
 
         public double getTriangleHeigth()
         {
-            return b.getDistanceTo(a);
+            return b.getDistanceTo(Position);
         }
 
         public override double getArea()
@@ -44,9 +44,7 @@
 
         public override double getPerimeter()
         {
-            return getTriangleBase() + a.getDistanceTo(b) + b.getDistanceTo(c);
+            return getTriangleBase() + Position.getDistanceTo(b) + b.getDistanceTo(c);
         }
-
     }
-
 }

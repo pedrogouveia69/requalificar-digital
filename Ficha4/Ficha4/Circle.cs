@@ -4,15 +4,13 @@
     {
         private double radius;
 
-        public Circle()
+        public Circle() : base()
         {
-            Position = new Point();
             radius = 0;
         }
 
-        public Circle(Point position, double radius)
-        {
-            this.Position = position;
+        public Circle(Point position, double radius) : base(position)
+        { 
             this.radius = radius;
         }
 

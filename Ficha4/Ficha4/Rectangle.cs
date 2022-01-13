@@ -2,24 +2,20 @@
 {
     public class Rectangle : Shape
     {
-        private Point topLeftPoint;
         private double height;
         private double width;
-        public Rectangle()
+        public Rectangle() : base()
         {
-            topLeftPoint = new Point();
             height = 0;
             width = 0;
         }
 
-        public Rectangle(Point topLeftPoint, double height, double width)
+        public Rectangle(Point position, double height, double width) : base(position)
         {
-            this.topLeftPoint = topLeftPoint;
             this.height = height;
             this.width = width;
         }
 
-        public Point TopLeftPoint { get { return topLeftPoint; } set { topLeftPoint = value; } }
         public double Height { get { return height; } set { height = value; } }
         public double Width { get { return width; } set { width = value; } }
 
@@ -36,13 +32,13 @@
 
         public bool contains(Point p)
         {
-            Point bottomLeftPoint = new Point(TopLeftPoint.X, topLeftPoint.Y - height);
+            Point bottomLeftPoint = new Point(Position.X, Position.Y - height);
             Point bottomRightPoint = new Point(bottomLeftPoint.X + width, bottomLeftPoint.Y);
 
             if 
             (
                 (p.X < bottomLeftPoint.X || p.X > bottomRightPoint.X) ||
-                (p.Y < bottomLeftPoint.Y || p.Y > TopLeftPoint.Y)
+                (p.Y < bottomLeftPoint.Y || p.Y > Position.Y)
             )
             {
                 return false;

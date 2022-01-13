@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Ficha4/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Ficha4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ficha4.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Ficha4/1.0.0": {
+      "type": "project",
+      "path": "../Ficha4/Ficha4.csproj",
+      "msbuildProject": "../Ficha4/Ficha4.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Ficha4 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Net04\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj": {
+              "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
