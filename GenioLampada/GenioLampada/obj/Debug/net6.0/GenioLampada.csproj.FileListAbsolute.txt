@@ -1,0 +1,15 @@
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\bin\Debug\net6.0\GenioLampada.exe
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\bin\Debug\net6.0\GenioLampada.deps.json
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\bin\Debug\net6.0\GenioLampada.runtimeconfig.json
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\bin\Debug\net6.0\GenioLampada.dll
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\bin\Debug\net6.0\ref\GenioLampada.dll
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\bin\Debug\net6.0\GenioLampada.pdb
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.csproj.AssemblyReference.cache
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.AssemblyInfoInputs.cache
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.AssemblyInfo.cs
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.csproj.CoreCompileInputs.cache
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.dll
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\ref\GenioLampada.dll
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.pdb
+C:\Users\Net04\source\repos\GenioLampada\GenioLampada\obj\Debug\net6.0\GenioLampada.genruntimeconfig.cache
