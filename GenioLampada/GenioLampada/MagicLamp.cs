@@ -4,48 +4,71 @@
     {
         private int numberOfGenies;
         private int rechargeCounter;
+        private GoodGenie goodGenie;
+        private BadGenie badGenie;
         private Demon demon;
+
+        private int startingNumberOfGenies;
 
         public MagicLamp(int numberOfGenies) 
         {
             this.numberOfGenies = numberOfGenies;
+            startingNumberOfGenies = numberOfGenies;
+            goodGenie = new GoodGenie();
+            badGenie = new BadGenie();
+            demon = new Demon();
         }
 
-        public int NumberOfGenies { get { return numberOfGenies; } }
-        public int RechargeCounter { get { return rechargeCounter; } set { rechargeCounter = value; } }
+        public string NumberOfGenies { get { return "Available Genies: " + numberOfGenies; } }
+        public string RechargeCounter { get { return "The Lamp was recharged " + rechargeCounter + " times."; } }
 
         public void rub(int times, int numberOfWishes) 
         {
             if (numberOfGenies > 0)
             {
-                if (times % 2 == 0)
+                if (times % 2 != 0)
                 {
-                    var genie = new GoodGenie();
+                    goodGenie.AvailableWishes = numberOfWishes;
+                    Console.WriteLine("Good Genie:");
                     while (numberOfWishes > 0)
                     {
-                        genie.grantWish();
+                        goodGenie.grantWish();
+                        goodGenie.AvailableWishes--;
                         numberOfWishes--;
                     }
-
                 }
                 else
                 {
-                    var genie = new BadGenie();
-                    genie.grantWish();
+                    if (badGenie.WishGranted == false)
+                    {
+                        Console.WriteLine("Bad Genie:");
+                        badGenie.grantWish();
+                        badGenie.WishGranted = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Bad Genie already granted his wish.");
+                    }
                 }
                 numberOfGenies--;
             }
             else 
             {
-                demon.grantWish();
+                Console.WriteLine("Demon:");
+                while (numberOfWishes > 0)
+                {
+                    demon.grantWish();
+                    numberOfWishes--;
+                }
             }
-
         }
 
         public void recharge() 
         {
-
-            RechargeCounter++;
+            Console.WriteLine("Lamp recharged.");
+            numberOfGenies = startingNumberOfGenies; 
+            rechargeCounter++;
         }
+
     }
 }

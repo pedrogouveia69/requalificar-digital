@@ -2,8 +2,7 @@
 {
     public class Demon : Genie
     {
-        private bool available;
-
-        public bool Available { get { return available; } set { available = value; } }
+        private bool isAvailable;
+        public bool IsAvailable { get { return isAvailable; } set { isAvailable = value; } }
     }
 }
