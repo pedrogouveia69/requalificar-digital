@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj": {}
+    "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\Ficha5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj": {
+    "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj",
+        "projectUniqueName": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj",
         "projectName": "Ficha4",
-        "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj",
-        "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\obj\\",
+        "projectPath": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj",
+        "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj": {
+    "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\Ficha5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj",
+        "projectUniqueName": "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\Ficha5.csproj",
         "projectName": "Ficha5",
-        "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\Ficha5.csproj",
-        "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\FIcha5\\obj\\",
+        "projectPath": "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\Ficha5.csproj",
+        "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj": {
-                "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha4\\Ficha4\\Ficha4.csproj"
+              "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj": {
+                "projectPath": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj"
               }
             }
           }

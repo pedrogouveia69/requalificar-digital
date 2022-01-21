@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Ficha4/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Ficha4.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Ficha4.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Ficha4/1.0.0": {
-      "type": "project",
-      "path": "../Ficha4/Ficha4.csproj",
-      "msbuildProject": "../Ficha4/Ficha4.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Ficha4 >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\decke\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\Ficha5.csproj",
-      "projectName": "Ficha5",
-      "projectPath": "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\Ficha5.csproj",
+      "projectUniqueName": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectName": "ConsoleApp6",
+      "projectPath": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
       "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\requalificar-digital\\Ficha4\\FIcha5\\obj\\",
+      "outputPath": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj": {
-              "projectPath": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

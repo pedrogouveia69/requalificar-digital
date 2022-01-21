@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj": {}
+    "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj": {}
   },
   "projects": {
-    "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj": {
+    "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj",
-        "projectName": "Ficha4",
-        "projectPath": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\Ficha4.csproj",
+        "projectUniqueName": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
+        "projectName": "ConsoleApp6",
+        "projectPath": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
         "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\requalificar-digital\\Ficha4\\Ficha4\\obj\\",
+        "outputPath": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
