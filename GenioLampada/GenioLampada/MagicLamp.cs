@@ -19,8 +19,8 @@
             demon = new Demon();
         }
 
-        public string NumberOfGenies { get { return "Available Genies: " + numberOfGenies; } }
-        public string RechargeCounter { get { return "The Lamp was recharged " + rechargeCounter + " times."; } }
+        public int NumberOfGenies { get { return numberOfGenies; } }
+        public int RechargeCounter { get { return rechargeCounter; } }
 
         public void rub(int times, int numberOfWishes) 
         {
