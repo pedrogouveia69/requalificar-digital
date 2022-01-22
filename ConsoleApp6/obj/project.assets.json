@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectUniqueName": "D:\\github\\requalificar-digital\\ConsoleApp6\\ConsoleApp6.csproj",
       "projectName": "ConsoleApp6",
-      "projectPath": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectPath": "D:\\github\\requalificar-digital\\ConsoleApp6\\ConsoleApp6.csproj",
       "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\decke\\source\\repos\\ConsoleApp6\\obj\\",
+      "outputPath": "D:\\github\\requalificar-digital\\ConsoleApp6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",

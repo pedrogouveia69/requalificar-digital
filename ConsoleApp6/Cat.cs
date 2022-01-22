@@ -2,9 +2,9 @@
 {
     public class Cat : Animal
     {
-        public Cat(int id, string name, float weight, int age)
+        public Cat(string name, float weight, int age)
         {
-            Id = id;
+            Id = null;
             Name = name;
             Weight = weight;
             Age = age;
