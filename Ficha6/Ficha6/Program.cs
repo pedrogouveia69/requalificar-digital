@@ -15,32 +15,50 @@ app.UseHttpsRedirection();
 var people = LoadJsonData();
 
 app.MapGet("/", () => "Hello World");
+
 app.MapGet("/people", () => 
 {
-    if (people != null)
-    {
-        return Results.Ok(people);
-    }
-    return Results.NotFound("Not Found");
-    
+    return people != null ? Results.Ok(people) : Results.NotFound("Not Found");
 });
 
 app.MapGet("/people/{id}", (int id) => 
 {
-    foreach (var person in people.PersonList)
-    {
-        if (person.Id == id) 
-        { 
-            return Results.Ok(person); 
-        }
-    }
-    return Results.NotFound("Not Found");
+    Person person = people.PersonList.Find(person => person.Id == id);
+    return person != null ? Results.Ok(person) : Results.NotFound("Not Found");
 });
+
 
 app.MapPost("/people", (Person person) =>
 {
     people.PersonList.Add(person);
     return Results.Ok(person);
+});
+
+app.MapDelete("/people/{id}", (int id) =>
+{
+    Person person = people.PersonList.Find(person => person.Id == id);
+
+    if (person != null)
+    {
+        people.PersonList.Remove(person);
+        return Results.Ok(person.Id);
+    }
+
+    return Results.NotFound("Not Found");
+});
+
+app.MapPut("/people/{id}", (int id, Person putPerson) =>
+{
+    Person person = people.PersonList.Find(person => person.Id == id);
+
+    if (person != null)
+    {
+        people.PersonList.Remove(person);
+        people.PersonList.Add(putPerson);
+        return Results.Ok(putPerson);
+    }
+
+    return Results.NotFound("Not Found");
 });
 
 app.Run();
