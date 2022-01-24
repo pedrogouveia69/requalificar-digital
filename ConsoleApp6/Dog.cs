@@ -5,7 +5,6 @@
         private List<Trick> tricks;
         public Dog(string name, float weight, int age)
         {
-            Id = null;
             Name = name;
             Weight = weight;
             Age = age;
@@ -34,7 +33,7 @@
                 if (t == trick)
                 {
                     tricks.Remove(trick);
-                    return Name + " won't remember how to " + trick.ToString() + " anymore.";
+                    return Name + " won't remember how to " + trick.ToString() + " anymore";
                 }
             }
             return Name + " doesn't know how to " + trick.ToString();
