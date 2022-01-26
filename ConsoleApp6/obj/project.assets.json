@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\decke\\.nuget\\packages\\": {}
+    "C:\\Users\\Net04\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\requalificar-digital\\ConsoleApp6\\ConsoleApp6.csproj",
+      "projectUniqueName": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\ConsoleApp6\\ConsoleApp6.csproj",
       "projectName": "ConsoleApp6",
-      "projectPath": "D:\\github\\requalificar-digital\\ConsoleApp6\\ConsoleApp6.csproj",
-      "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\requalificar-digital\\ConsoleApp6\\obj\\",
+      "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\ConsoleApp6\\ConsoleApp6.csproj",
+      "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\ConsoleApp6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
