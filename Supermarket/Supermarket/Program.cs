@@ -14,13 +14,11 @@ maria.AddToShoppingCart(new Product("massa", 0.4));
 caixaP.Open(debora);
 
 caixaP.AddToWaitingLine(maria);
-caixaP.Employee.ScanProducts(maria.ShoppingCart);
-caixaP.RemoveFromWaitingLine(maria);
-
 caixaP.AddToWaitingLine(jose);
 caixaP.AddToWaitingLine(sara);
 
 foreach (var costumer in caixaP.WaitingLine)
 {
-    Console.WriteLine(costumer.Name);
+    caixaP.Employee.ScanProducts(costumer.ShoppingCart);
 }
+
