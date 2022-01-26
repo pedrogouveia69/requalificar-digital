@@ -9,6 +9,10 @@ var animalShelter = new AnimalShelter(5, 5);
 Console.WriteLine(animalShelter.Register(bobby));
 Console.WriteLine(animalShelter.Register(cat_bobby));
 Console.WriteLine(animalShelter.Register(bobby2));
+Console.WriteLine(animalShelter.Adopt(cat_bobby.Id));
+
+// re-register with same id
+Console.WriteLine(animalShelter.Register(cat_bobby));
 
 Console.WriteLine(bobby.Teach(Trick.Fetch));
 

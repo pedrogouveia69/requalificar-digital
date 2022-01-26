@@ -1,0 +1,15 @@
+C:\Users\Net04\source\repos\Supermarket\Supermarket\bin\Debug\net6.0\Supermarket.exe
+C:\Users\Net04\source\repos\Supermarket\Supermarket\bin\Debug\net6.0\Supermarket.deps.json
+C:\Users\Net04\source\repos\Supermarket\Supermarket\bin\Debug\net6.0\Supermarket.runtimeconfig.json
+C:\Users\Net04\source\repos\Supermarket\Supermarket\bin\Debug\net6.0\Supermarket.dll
+C:\Users\Net04\source\repos\Supermarket\Supermarket\bin\Debug\net6.0\ref\Supermarket.dll
+C:\Users\Net04\source\repos\Supermarket\Supermarket\bin\Debug\net6.0\Supermarket.pdb
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.csproj.AssemblyReference.cache
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.AssemblyInfoInputs.cache
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.AssemblyInfo.cs
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.csproj.CoreCompileInputs.cache
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.dll
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\ref\Supermarket.dll
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.pdb
+C:\Users\Net04\source\repos\Supermarket\Supermarket\obj\Debug\net6.0\Supermarket.genruntimeconfig.cache

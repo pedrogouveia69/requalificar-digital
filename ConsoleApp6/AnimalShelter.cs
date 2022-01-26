@@ -30,8 +30,10 @@
             {
                 if (dogCapacity == 0)
                     return "The shelter cannot take in any more dogs.";
+                
+                if (animal.Id == 0)
+                    animal.Id = animalId;
 
-                animal.Id = animalId;
                 dogs.Add((Dog)animal);
                 dogCapacity--;
                 animalId++;
@@ -43,7 +45,9 @@
                 if (catCapacity == 0)
                     return "The shelter cannot take in any more cats.";
 
-                animal.Id = animalId;
+                if (animal.Id == 0)
+                    animal.Id = animalId;
+
                 cats.Add((Cat)animal);
                 catCapacity--;
                 animalId++;
