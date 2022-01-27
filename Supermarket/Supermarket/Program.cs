@@ -1,24 +1,34 @@
 ﻿using Supermarket;
 
-var caixaP = new CaixaPrioritaria();
+var priorityRegister = new Register(RegisterType.PRIORITY);
 
-var debora = new Employee("debora", 1);
+var debora = new Employee(1, "debora");
+var joana = new Employee(2, "joana");
 
-var maria = new Costumer("maria", false);
-var jose = new Costumer("jose", false);
-var sara = new Costumer("sara", true);
+var maria = new Costumer(123, false);
+var jose = new Costumer(321, false);
+var sara = new Costumer(132, true);
 
-maria.AddToShoppingCart(new Product("arroz", 0.5));
-maria.AddToShoppingCart(new Product("massa", 0.4));
+maria.AddToShoppingCart(new Product(1, "arroz", 0.5));
+maria.AddToShoppingCart(new Product(2, "massa", 0.4));
 
-caixaP.Open(debora);
+debora.OpenRegister(priorityRegister);
 
-caixaP.AddToWaitingLine(maria);
-caixaP.AddToWaitingLine(jose);
-caixaP.AddToWaitingLine(sara);
+maria.WaitInLine(priorityRegister);
+jose.WaitInLine(priorityRegister);
+sara.WaitInLine(priorityRegister);
 
-foreach (var costumer in caixaP.WaitingLine)
+foreach (var costumer in priorityRegister.WaitingLine)
 {
-    caixaP.Employee.ScanProducts(costumer.ShoppingCart);
+    priorityRegister.Employee.ScanProducts(costumer.ShoppingCart);
 }
+
+priorityRegister.ChangeEmployee(joana);
+joana.CloseRegister(priorityRegister);
+
+foreach (var item in priorityRegister.Log)
+{
+    Console.WriteLine(item);
+}
+
 
