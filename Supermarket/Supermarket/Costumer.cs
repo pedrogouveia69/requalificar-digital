@@ -19,7 +19,7 @@
         public void AddToShoppingCart(Product product)
         {
             shoppingCart.Add(product);
-            Console.WriteLine(product.description + " added to shopping cart");
+            Console.WriteLine(product.Description + " added to shopping cart");
         }
 
         public void WaitInLine(Register register)
@@ -28,8 +28,12 @@
                 Console.WriteLine("This register is closed");
             else
 
-                if(this.IsPregnant && register.Type == RegisterType.PRIORITY)
+                if (this.IsPregnant && register.Type == RegisterType.PRIORITY)
                     register.WaitingLine.Insert(0, this);
+
+                else if (this.ShoppingCart.Count > 10 && register.Type == RegisterType.EXPRESS)
+                    Console.WriteLine("This register is only for people with 10 products or less.");
+
                 else
                     register.WaitingLine.Add(this);
         }

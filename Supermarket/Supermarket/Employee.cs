@@ -32,16 +32,15 @@
 
         public void ScanProducts(List<Product> products)
         {
+            double sum = 0;
             if (products.Count > 0)
-            {
-                double sum = 0;
+
                 foreach (var product in products)
                 {
-                    sum += product.price;
-                    Console.WriteLine(product.description + " scanned.");
+                    sum += product.Price;
+                    Console.WriteLine(product.Description + " scanned.");
                 }
-                Console.WriteLine("Total: " + sum);
-            }
+            //add to register sum
         }
     }
 }

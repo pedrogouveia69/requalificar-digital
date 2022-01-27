@@ -7,6 +7,7 @@
         private Employee? employee;
         private List<Costumer> waitingLine;
         private List<string> log;
+        private double sumEuros;
 
         public Register(RegisterType type)
         {
@@ -19,6 +20,7 @@
         public List<Costumer> WaitingLine { get { return waitingLine; } }
         public Employee? Employee { get { return employee; } set { employee = value; } }
         public List<string> Log { get { return log; } }
+        public double SumEuros { get { return sumEuros; } set { sumEuros = value; } }
 
     
         public void ChangeEmployee(Employee newEmployee)
