@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\requalificar-digital\\Pratica2\\Pratica2.csproj": {}
+    "C:\\Users\\decke\\source\\repos\\Pratica2Cont\\Pratica2Cont.csproj": {}
   },
   "projects": {
-    "D:\\github\\requalificar-digital\\Pratica2\\Pratica2.csproj": {
+    "C:\\Users\\decke\\source\\repos\\Pratica2Cont\\Pratica2Cont.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\requalificar-digital\\Pratica2\\Pratica2.csproj",
-        "projectName": "Pratica2",
-        "projectPath": "D:\\github\\requalificar-digital\\Pratica2\\Pratica2.csproj",
+        "projectUniqueName": "C:\\Users\\decke\\source\\repos\\Pratica2Cont\\Pratica2Cont.csproj",
+        "projectName": "Pratica2Cont",
+        "projectPath": "C:\\Users\\decke\\source\\repos\\Pratica2Cont\\Pratica2Cont.csproj",
         "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\requalificar-digital\\Pratica2\\obj\\",
+        "outputPath": "C:\\Users\\decke\\source\\repos\\Pratica2Cont\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
