@@ -1,4 +1,5 @@
 using Ficha7;
+using System.Net;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
+/*
 var employee1 = new Employee()
 {
     Id = 1,
@@ -28,7 +30,7 @@ var employee2 = new Employee()
     FirstName = "pedro2",
     LastName = "gouveia2",
     EmployeeCode = "E102",
-    Region = "PT2",
+    Region = "PT",
     PhoneNumber = "987654321_2",
     EmailAddress = "pedro@mail.com2"
 };
@@ -41,19 +43,21 @@ var employee3 = new Employee()
     FirstName = "pedro3",
     LastName = "gouveia3",
     EmployeeCode = "E103",
-    Region = "PT3",
+    Region = "PT",
     PhoneNumber = "987654321_3",
     EmailAddress = "pedro@mail.com3"
 };
+*/
 
+/*
 var employees = new Employees();
 employees.EmployeeList.Add(employee1);
 employees.EmployeeList.Add(employee2);
 employees.EmployeeList.Add(employee3);
-
 SerializeEmployees(employees);
+*/
 
-employees = DeserializeEmployees();
+var employees = DeserializeEmployees();
 
 // Configure the HTTP request pipeline.
 
@@ -61,33 +65,47 @@ app.UseHttpsRedirection();
 
 app.MapGet("/", () => "Home Page");
 
-app.MapGet("/employees", () => employees != null ? Results.Ok(employees) : Results.NotFound("Not Found"));
+app.MapGet("/employees", () =>
+{
+    if (employees.EmployeeList.Count > 0)
+    {
+        List<Employee> emps = new List<Employee>();
+        foreach (var employee in employees.EmployeeList)
+        {
+            if (employee.Deleted == false)
+            {
+                emps.Add(employee);
+            }
+        }
+        return Results.Ok(emps);
+    }
+    return Results.NotFound("Not Found");
+});
 
 app.MapGet("/employees/{id}", (int id) =>
 {
     Employee employee = employees.EmployeeList.Find(e => e.Id == id);
-    return employee != null ? Results.Ok(employee) : Results.NotFound("Not Found");
+    return employee != null && employee.Deleted == false ? Results.Ok(employee) : Results.NotFound("Not Found");
 });
 
-/*
-app.MapGet("/employees/{region}", (string region) =>
+app.MapGet("/employees/region/{region}", (string region) =>
 {
-    Employee employee = employees.EmployeeList.Find(e => e.Region == region);
-    return employee != null ? Results.Ok(employee) : Results.NotFound("Not Found");
-});
-*/
-
-app.MapDelete("/employees/{id}", (int id) =>
-{
-    Employee employee = employees.EmployeeList.Find(e => e.Id == id);
-
-    if (employee != null)
+    List<Employee> emps = new List<Employee>();
+    foreach (Employee employee in employees.EmployeeList)
     {
-        employees.EmployeeList.Remove(employee);
-        return Results.Ok(employee.UserId);
+        if (employee.Region == region.ToUpper() && employee.Deleted == false)
+            emps.Add(employee);
     }
 
+    if (emps.Count > 0)
+        return Results.Ok(emps);
     return Results.NotFound("Not Found");
+});
+
+app.MapGet("/employees/download", () =>
+{
+
+
 });
 
 app.MapPost("/employees", (Employee employee) =>
@@ -95,18 +113,34 @@ app.MapPost("/employees", (Employee employee) =>
     int id = employees.EmployeeList.Count() + 1;
     employee.Id = id;
     employees.EmployeeList.Add(employee);
+    SerializeEmployees(employees);
     return Results.Ok(employee);
 });
 
-app.MapPut("/people/{id}", (int id, Employee putEmployee) =>
+app.MapPut("/employees/{id}", (int id, Employee putEmployee) =>
+{
+    Employee employee = employees.EmployeeList.Find(e => e.Id == id);
+
+    if (employee != null && employee.Deleted == false)
+    {
+        employees.EmployeeList.Remove(employee);
+        employees.EmployeeList.Add(putEmployee);
+        SerializeEmployees(employees);
+        return Results.Ok(putEmployee);
+    }
+
+    return Results.NotFound("Not Found");
+});
+
+app.MapDelete("/employees/{id}", (int id) =>
 {
     Employee employee = employees.EmployeeList.Find(e => e.Id == id);
 
     if (employee != null)
     {
-        employees.EmployeeList.Remove(employee);
-        employees.EmployeeList.Add(putEmployee);
-        return Results.Ok(putEmployee);
+        employee.Deleted = true;
+        SerializeEmployees(employees);
+        return Results.Ok(employee.Id);
     }
 
     return Results.NotFound("Not Found");
@@ -124,8 +158,10 @@ Employee DeserializeEmployee()
 
 Employees DeserializeEmployees()
 {
+    Employees employees = new Employees();
     var jsonData = File.ReadAllText("employees.json");
-    Employees employees = JsonSerializer.Deserialize<Employees>(jsonData);
+    if(jsonData.Length != 0)
+        employees = JsonSerializer.Deserialize<Employees>(jsonData);
 
     return employees;
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Net04\\source\\repos\\Ficha7\\Ficha7\\Ficha7.csproj",
+      "projectUniqueName": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha7\\Ficha7\\Ficha7.csproj",
       "projectName": "Ficha7",
-      "projectPath": "C:\\Users\\Net04\\source\\repos\\Ficha7\\Ficha7\\Ficha7.csproj",
+      "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha7\\Ficha7\\Ficha7.csproj",
       "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Net04\\source\\repos\\Ficha7\\Ficha7\\obj\\",
+      "outputPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\Ficha7\\Ficha7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
