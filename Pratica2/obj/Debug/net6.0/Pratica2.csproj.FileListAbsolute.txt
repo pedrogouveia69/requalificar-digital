@@ -1,0 +1,15 @@
+C:\Users\decke\source\repos\Pratica2\bin\Debug\net6.0\Pratica2.exe
+C:\Users\decke\source\repos\Pratica2\bin\Debug\net6.0\Pratica2.deps.json
+C:\Users\decke\source\repos\Pratica2\bin\Debug\net6.0\Pratica2.runtimeconfig.json
+C:\Users\decke\source\repos\Pratica2\bin\Debug\net6.0\Pratica2.dll
+C:\Users\decke\source\repos\Pratica2\bin\Debug\net6.0\ref\Pratica2.dll
+C:\Users\decke\source\repos\Pratica2\bin\Debug\net6.0\Pratica2.pdb
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.csproj.AssemblyReference.cache
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.AssemblyInfoInputs.cache
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.AssemblyInfo.cs
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.csproj.CoreCompileInputs.cache
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.dll
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\ref\Pratica2.dll
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.pdb
+C:\Users\decke\source\repos\Pratica2\obj\Debug\net6.0\Pratica2.genruntimeconfig.cache
