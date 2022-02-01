@@ -1,0 +1,15 @@
+D:\github\requalificar-digital\Pratica3\bin\Debug\net6.0\Pratica3.exe
+D:\github\requalificar-digital\Pratica3\bin\Debug\net6.0\Pratica3.deps.json
+D:\github\requalificar-digital\Pratica3\bin\Debug\net6.0\Pratica3.runtimeconfig.json
+D:\github\requalificar-digital\Pratica3\bin\Debug\net6.0\Pratica3.dll
+D:\github\requalificar-digital\Pratica3\bin\Debug\net6.0\ref\Pratica3.dll
+D:\github\requalificar-digital\Pratica3\bin\Debug\net6.0\Pratica3.pdb
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.csproj.AssemblyReference.cache
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.AssemblyInfoInputs.cache
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.AssemblyInfo.cs
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.csproj.CoreCompileInputs.cache
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.dll
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\ref\Pratica3.dll
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.pdb
+D:\github\requalificar-digital\Pratica3\obj\Debug\net6.0\Pratica3.genruntimeconfig.cache
