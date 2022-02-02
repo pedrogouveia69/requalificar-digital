@@ -2,20 +2,16 @@
 {
     public class Utilizador
     {
-        private string nome;
-        private string password;
+        public string Nome { get; set; }
+        public string Password { get; set; }
 
         public Utilizador(string nome, string password)
         {
-            this.nome = nome;
-            this.password = password;
+            Nome = nome;
+            Password = password;
         }
 
-        public string Nome { get { return nome; } set { nome = value; } }
-        public string Password { get { return password; } set { password = value; } }   
-        public void login()
-        {
+    public void Login() { }
 
-        }
     }
 }

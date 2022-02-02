@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Net04\\.nuget\\packages\\": {}
+    "C:\\Users\\decke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\ExsUnipartner\\ExsUnipartner\\ExsUnipartner.csproj",
+      "projectUniqueName": "D:\\github\\requalificar-digital\\ExsUnipartner\\ExsUnipartner\\ExsUnipartner.csproj",
       "projectName": "ExsUnipartner",
-      "projectPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\ExsUnipartner\\ExsUnipartner\\ExsUnipartner.csproj",
-      "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Net04\\Documents\\GitHub\\dev_web_apps\\ExsUnipartner\\ExsUnipartner\\obj\\",
+      "projectPath": "D:\\github\\requalificar-digital\\ExsUnipartner\\ExsUnipartner\\ExsUnipartner.csproj",
+      "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\requalificar-digital\\ExsUnipartner\\ExsUnipartner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

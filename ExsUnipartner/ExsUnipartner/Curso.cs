@@ -1,23 +1,24 @@
 ﻿namespace ExsUnipartner
 {
-    public class Curso : ICurso
+    public abstract class Curso : ICurso
     {
-        private string nomeCurso;
+        private string nome;
         private List<string> disciplinas;
-        private int anoCurso;
+        private int ano;
         private string resumoMateria;
 
-        public Curso(string nomeCurso, List<string> disciplinas, int anoCurso, string resumoMateria)
+        protected Curso(string nome, List<string> disciplinas, int ano, string resumoMateria)
         {
-            this.nomeCurso = nomeCurso;
+            this.nome = nome;
             this.disciplinas = disciplinas;
-            this.anoCurso = anoCurso;
+            this.ano = ano;
             this.resumoMateria = resumoMateria;
         }
 
-        public string obterNomeCurso() { return nomeCurso; }
-        public List<string> obterDisciplinas() { return disciplinas; }
-        public int obterAnoCurso() { return anoCurso; }
-        public string obterResumoMateria() { return resumoMateria; }
+        public string Nome { get { return nome; } set { nome = value; } }
+        public List<string> Disciplinas { get { return disciplinas; } set { disciplinas = value; } }
+        public int Ano { get { return ano; } set { ano = value; } }
+        public string ResumoMateria { get { return resumoMateria; } set { resumoMateria = value; } }
     }
 }
+

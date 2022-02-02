@@ -2,21 +2,16 @@
 {
     public class Cao
     {
-        public string birthDate { get; set; }
-        public string nome { get; set; }
-        public float weigth { get; set; }
+        public string BirthDate { get; set; }
+        public string Name { get; set; }
+        public float Weigth { get; set; }
+        public bool IsObese { get { return Weigth > 20 ? true : false; } }
 
-        public Cao (string birthDate, string nome, float weigth)
+        public Cao(string birthDate, string name, float weigth)
         {
-            this.birthDate = birthDate;
-            this.nome = nome;
-            this.weigth = weigth;
-        }
-
-        public bool isObese()
-        {
-            // condition ? consequent : alternative
-            return weigth > 20 ? true : false;
+            BirthDate = birthDate;
+            Name = name;
+            Weigth = weigth;
         }
     }
 }

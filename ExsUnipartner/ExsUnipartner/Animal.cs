@@ -2,7 +2,7 @@
 {
     public abstract class Animal
     {
-        public bool disponivel() { return true; }
-        public abstract void comer();
+        public bool Disponivel { get { return true; } }
+        public abstract void Comer();
     }
 }

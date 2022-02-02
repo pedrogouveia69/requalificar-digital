@@ -10,16 +10,14 @@ namespace ExsUnipartner
     public class Funcionario : Utilizador
     {
 
-        private int numFuncionario;
+        public int NumFuncionario { get; set; }
 
         public Funcionario(string nome, string password, int numFuncionario) : base(nome, password)
         {
-            this.numFuncionario = numFuncionario;
+            NumFuncionario = numFuncionario;
         }
 
-        public int NumFuncionario { get { return numFuncionario; } }
-
-        public void vender() { }
-        public void registarHora() { }
+        public void Vender() { }
+        public void RegistarHora() { }
     }
 }

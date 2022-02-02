@@ -2,14 +2,11 @@
 {
     public static class Despertador
     {
-        private static bool estado;
-        private static string data;
-        private static string hora;
+        public static bool Estado { get; set; }
+        public static string Data { get; set; }
+        public static string Hora { get; set; }
 
-        public static void on() { estado = true; }
-        public static void off() { estado = false; }
-        public static string Data { set { data = value; } }
-        public static string Hora { set { hora = value; } }
-
+        public static void On() { Estado = true; }
+        public static void Off() { Estado = false; }
     }
 }

@@ -2,15 +2,12 @@
 {
     public class Bicicleta : Veiculo
     {
-        private int tamanhoRoda;
+        private int TamanhoRoda { get; set; }
         public Bicicleta(bool estado, int velocidadeAtual, int tamanhoRoda) : base(estado, velocidadeAtual)
         {
-            this.tamanhoRoda = tamanhoRoda;
+            TamanhoRoda = tamanhoRoda;
         }
-
-        public int TamanhoRoda { get { return tamanhoRoda;} set { tamanhoRoda = value;} }
-
-        public override int getVelocidadeAtual()
+        public override int VelocidadeAtual()
         {
             return velocidadeAtual;
         }

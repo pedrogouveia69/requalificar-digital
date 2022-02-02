@@ -2,15 +2,13 @@
 {
     public class Pessoa
     {
-        public string nome { get; set; }
-        private int num_bi;
+        public string Nome { get; set; }
+        public int Num_bi { get; set; }
 
         public Pessoa(string nome, int num_bi)
         {
-            this.nome = nome;
-            this.num_bi = num_bi;
+            Nome = nome;
+            Num_bi = num_bi;
         }
-
-        public int Num_bi { get { return num_bi; } set { num_bi = value; } } 
     }
 }

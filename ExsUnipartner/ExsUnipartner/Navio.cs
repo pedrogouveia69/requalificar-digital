@@ -4,15 +4,16 @@
     {
         public Navio(bool estado, int velocidadeAtual) : base(estado, velocidadeAtual)
         {
+
         }
 
-        public override string ligar()
+        public override string Ligar()
         {
             Estado = true;
-            return "Ligado com sucesso";
+            return "O navio doi ligado";
         }
 
-        public override int getVelocidadeAtual()
+        public override int VelocidadeAtual()
         {
             return velocidadeAtual;
         }

@@ -2,15 +2,13 @@
 {
     public class Automovel : Veiculo
     {
-        private string tipoCombustivel;
+        public string TipoCombustivel { get; set; }
         public Automovel(bool estado, int velocidadeAtual, string tipoCombustivel) : base(estado, velocidadeAtual)
         {
-            this.tipoCombustivel = tipoCombustivel;
+            TipoCombustivel = tipoCombustivel;
         }
 
-        public string TipoCombustivel { get { return tipoCombustivel;} }
-
-        public override int getVelocidadeAtual()
+        public override int VelocidadeAtual()
         {
             return velocidadeAtual;
         }

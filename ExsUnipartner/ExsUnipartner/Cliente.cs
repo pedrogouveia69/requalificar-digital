@@ -2,12 +2,12 @@
 {
     public class Cliente : Utilizador
     {
-        private int numCliente;
+        public int NumCliente { get; set; }
         public Cliente(string nome, string password, int numCliente) : base(nome, password)
         { 
-            this.numCliente = numCliente;
+            NumCliente = numCliente;
         }
 
-        public void comprar() { }
+        public void Comprar() { }
     }
 }

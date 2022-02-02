@@ -4,28 +4,24 @@
     {
         private string detalhes;
         private double preco;
-        private float desconto;
+        private double desconto;
         private int stock;
 
-        public Produto(string detalhes, double preco, float desconto, int stock)
+        public Produto(string detalhes, double preco, double desconto, int stock)
         {
             this.detalhes = detalhes;
             this.preco = preco;
             this.desconto = desconto;
             this.stock = stock;
         }
-        
-        public string detalhesProduto() { return detalhes; }
-        public double precoProduto() { return preco; }
-        public double precoComDesconto() { return preco * desconto; }
-        public bool estaDisponivel() { return stock > 0 ? true : false; }
-        public int quantidadeStock() 
-        { 
-            if (estaDisponivel())
-            {
-                return stock;
-            }
-            return 0;
-        }
+        public string Detalhes { get { return detalhes; } set { detalhes = value; } }
+
+        public double Preco { get { return preco; } set { preco = value; } }
+
+        public double Desconto { get { return desconto; } set { desconto = value; } }
+
+        public int Stock { get { return stock; } set { stock = value; } }
+
+        public bool Disponivel { get { return stock > 0 ? true : false; } }
     }
 }

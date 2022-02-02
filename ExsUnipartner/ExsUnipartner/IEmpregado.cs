@@ -2,11 +2,10 @@
 {
     internal interface IEmpregado
     {
-        public void trabalhar();
-        public void obterEmpresa();
-        public void obterAnosServico();
-        public void obterNomeCompleto();
-        public void obterIdade();
-
+        public string Empresa { get; }
+        public int AnosServico { get; }
+        public string NomeCompleto { get; }
+        public int Idade { get; }
+        public void Trabalhar();
     }
 }
