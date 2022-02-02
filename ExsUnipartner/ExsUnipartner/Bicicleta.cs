@@ -2,7 +2,7 @@
 {
     public class Bicicleta : Veiculo
     {
-        private int TamanhoRoda { get; set; }
+        public int TamanhoRoda { get; set; }
         public Bicicleta(bool estado, int velocidadeAtual, int tamanhoRoda) : base(estado, velocidadeAtual)
         {
             TamanhoRoda = tamanhoRoda;

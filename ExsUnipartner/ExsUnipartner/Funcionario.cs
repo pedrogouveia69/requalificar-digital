@@ -9,7 +9,6 @@ namespace ExsUnipartner
 
     public class Funcionario : Utilizador
     {
-
         public int NumFuncionario { get; set; }
 
         public Funcionario(string nome, string password, int numFuncionario) : base(nome, password)
