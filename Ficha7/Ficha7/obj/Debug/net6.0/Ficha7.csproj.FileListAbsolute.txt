@@ -41,3 +41,4 @@ C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha7\Ficha7\obj\Debug\net6.0\Fich
 C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha7\Ficha7\obj\Debug\net6.0\ref\Ficha7.dll
 C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha7\Ficha7\obj\Debug\net6.0\Ficha7.pdb
 C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha7\Ficha7\obj\Debug\net6.0\Ficha7.genruntimeconfig.cache
+C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha7\Ficha7\bin\Debug\net6.0\employees.json

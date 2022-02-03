@@ -1,4 +1,5 @@
 using Ficha7;
+using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Text.Json;
 
@@ -77,7 +78,7 @@ app.MapGet("/employees", () =>
                 emps.Add(employee);
             }
         }
-        return Results.Ok(emps);
+        return emps.Count > 0 ? Results.Ok(emps) : Results.NotFound("Not Found");
     }
     return Results.NotFound("Not Found");
 });
@@ -96,15 +97,22 @@ app.MapGet("/employees/region/{region}", (string region) =>
         if (employee.Region == region.ToUpper() && employee.Deleted == false)
             emps.Add(employee);
     }
-
-    if (emps.Count > 0)
-        return Results.Ok(emps);
-    return Results.NotFound("Not Found");
+    return emps.Count > 0 ? Results.Ok(emps) : Results.NotFound("Not Found");
 });
+
+ActionResult TESTSAVE()
+{
+    var data = JsonSerializer.Serialize(employees); 
+    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(data);
+    var output = new FileContentResult(bytes, "application/octet-stream");
+    output.FileDownloadName = "download.txt";
+
+    return output;
+}
 
 app.MapGet("/employees/download", () =>
 {
-
+    TESTSAVE();
 
 });
 
