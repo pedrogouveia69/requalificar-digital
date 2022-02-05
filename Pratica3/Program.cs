@@ -2,7 +2,7 @@
 {
     if (n >= 1 && n < 10)
     {
-        for(int i = 1; i < 10; i++)
+        for (int i = 1; i < 10; i++)
         {
             Console.WriteLine(n + "*" + i + "=" + (n * i));
         }
@@ -78,7 +78,7 @@ void resultados(float[] notas)
 int acimaDaMedia(float[] notas, float media)
 {
     int count = 0;
-    foreach(float nota in notas)
+    foreach (float nota in notas)
     {
         if (nota > media)
         {
@@ -88,11 +88,51 @@ int acimaDaMedia(float[] notas, float media)
     return count;
 }
 
+float imc(float peso, float altura)
+{
+    double imc = peso / Math.Pow(altura, 2);
+    return (float)imc;
+}
+
+void escreveCategoria(float imc)
+{
+    if (imc < 19)
+    {
+        Console.WriteLine("Magro" + imc);
+    } 
+    else if (imc >= 19 || imc <= 25)
+    {
+        Console.WriteLine("Normal" + imc);
+    }
+    else if (imc <= 30)
+    {
+        Console.WriteLine("Excesso de peso" + imc);
+    }
+    else if (imc <= 40)
+    {
+        Console.WriteLine("Obeso" + imc);
+    }
+    else
+    {
+        Console.WriteLine("Obesidade Mórbida" + imc);
+    }
+}
+
+//escreveCategoria(imc(75, 1.78f));
+
+    /*
+double imc2(float peso, float altura)
+{
+    return peso / Math.Pow(altura, 2);
+}
+    */
+
 //tabuada(6);
 
+/*
 float[] notas = new float[20];
 inserirDados(notas);
 //imprimeDados(notas);
 
 resultados(notas);
-
+*/

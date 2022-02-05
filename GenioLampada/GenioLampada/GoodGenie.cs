@@ -2,8 +2,6 @@
 {
     public class GoodGenie: Genie
     {
-        private int availableWishes;
-        public int AvailableWishes { get { return availableWishes; } set { availableWishes = value; } }
-       
+        public int AvailableWishes { get; set; }
     }
 }
