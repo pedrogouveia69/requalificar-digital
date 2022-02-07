@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Pedro_Gouveia_2019419/1.0.0": {
+        "runtime": {
+          "Pedro_Gouveia_2019419.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pedro_Gouveia_2019419/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\bin\Debug\net6.0\Pedro_Gouveia_2019419.exe
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\bin\Debug\net6.0\Pedro_Gouveia_2019419.deps.json
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\bin\Debug\net6.0\Pedro_Gouveia_2019419.runtimeconfig.json
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\bin\Debug\net6.0\Pedro_Gouveia_2019419.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\bin\Debug\net6.0\ref\Pedro_Gouveia_2019419.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\bin\Debug\net6.0\Pedro_Gouveia_2019419.pdb
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.csproj.AssemblyReference.cache
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.AssemblyInfoInputs.cache
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.AssemblyInfo.cs
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.csproj.CoreCompileInputs.cache
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\ref\Pedro_Gouveia_2019419.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.pdb
+C:\Users\Net15\Desktop\Requalificar\.NetLab\APIWeb\Pedro_Gouveia_2019419\obj\Debug\net6.0\Pedro_Gouveia_2019419.genruntimeconfig.cache
