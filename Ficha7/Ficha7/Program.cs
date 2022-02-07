@@ -1,6 +1,4 @@
 using Ficha7;
-using Microsoft.AspNetCore.Mvc;
-using System.Net;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -68,51 +66,29 @@ app.MapGet("/", () => "Home Page");
 
 app.MapGet("/employees", () =>
 {
-    if (employees.EmployeeList.Count > 0)
-    {
-        List<Employee> emps = new List<Employee>();
-        foreach (var employee in employees.EmployeeList)
-        {
-            if (employee.Deleted == false)
-            {
-                emps.Add(employee);
-            }
-        }
-        return emps.Count > 0 ? Results.Ok(emps) : Results.NotFound("Not Found");
-    }
-    return Results.NotFound("Not Found");
-});
-
-app.MapGet("/employees/{id}", (int id) =>
-{
-    Employee employee = employees.EmployeeList.Find(e => e.Id == id);
-    return employee != null && employee.Deleted == false ? Results.Ok(employee) : Results.NotFound("Not Found");
-});
-
-app.MapGet("/employees/region/{region}", (string region) =>
-{
-    List<Employee> emps = new List<Employee>();
-    foreach (Employee employee in employees.EmployeeList)
-    {
-        if (employee.Region == region.ToUpper() && employee.Deleted == false)
-            emps.Add(employee);
-    }
+    var emps = employees.EmployeeList.FindAll(e => e.Deleted == false);
     return emps.Count > 0 ? Results.Ok(emps) : Results.NotFound("Not Found");
 });
 
-ActionResult TESTSAVE()
+app.MapGet("/employees/{id:int}", (int id) =>
 {
-    var data = JsonSerializer.Serialize(employees); 
-    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(data);
-    var output = new FileContentResult(bytes, "application/octet-stream");
-    output.FileDownloadName = "download.txt";
+    var employee = employees.EmployeeList.Find(e => e.Id == id && e.Deleted == false);
+    return employee != null ? Results.Ok(employee) : Results.NotFound("Not Found");
+});
 
-    return output;
-}
+app.MapGet("/employees/{region}", (string region) =>
+{
+    var emps = employees.EmployeeList.FindAll(e => e.Region == region.ToUpper() && e.Deleted == false);
+    return emps.Count > 0 ? Results.Ok(emps) : Results.NotFound("Not Found");
+});
 
 app.MapGet("/employees/download", () =>
 {
-    TESTSAVE();
+    string data = JsonSerializer.Serialize(employees);
+    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(data);
+    //byte[] bytes2 = File.ReadAllBytes("employees.json");
+
+    return Results.File(bytes, null, "employees.json");
 
 });
 
@@ -122,14 +98,14 @@ app.MapPost("/employees", (Employee employee) =>
     employee.Id = id;
     employees.EmployeeList.Add(employee);
     SerializeEmployees(employees);
-    return Results.Ok(employee);
+    return Results.Created("/employees", employee);
 });
 
 app.MapPut("/employees/{id}", (int id, Employee putEmployee) =>
 {
-    Employee employee = employees.EmployeeList.Find(e => e.Id == id);
+    var employee = employees.EmployeeList.Find(e => e.Id == id && e.Deleted == false);
 
-    if (employee != null && employee.Deleted == false)
+    if (employee != null)
     {
         employees.EmployeeList.Remove(employee);
         employees.EmployeeList.Add(putEmployee);
@@ -142,7 +118,7 @@ app.MapPut("/employees/{id}", (int id, Employee putEmployee) =>
 
 app.MapDelete("/employees/{id}", (int id) =>
 {
-    Employee employee = employees.EmployeeList.Find(e => e.Id == id);
+    var employee = employees.EmployeeList.Find(e => e.Id == id && e.Deleted == false);
 
     if (employee != null)
     {
