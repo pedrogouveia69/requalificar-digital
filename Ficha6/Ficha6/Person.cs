@@ -8,17 +8,5 @@
         public int Age { get; set; }
         public string Gender { get; set; }
         public int Id { get; set; }
-
-        
-        /*public Person(string firstName, string lastName, string profession, int age, string gender, int id)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Profession = profession;
-            Age = age;
-            Gender = gender;
-            Id = id;
-        }
-        */
     }
 }

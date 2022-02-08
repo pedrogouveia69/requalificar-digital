@@ -22,3 +22,8 @@ C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\obj\Debug\net6.0\Fich
 C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\obj\Debug\net6.0\ref\Ficha6.dll
 C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\obj\Debug\net6.0\Ficha6.pdb
 C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\obj\Debug\net6.0\Ficha6.genruntimeconfig.cache
+C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Net04\Documents\GitHub\dev_web_apps\Ficha6\Ficha6\obj\Debug\net6.0\Ficha6.MvcApplicationPartsAssemblyInfo.cs
