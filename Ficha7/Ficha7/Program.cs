@@ -130,6 +130,20 @@ app.MapDelete("/employees/{id}", (int id) =>
     return Results.NotFound("Not Found");
 });
 
+app.MapDelete("/employees/{id}", (int id) =>
+{
+    var employee = employees.EmployeeList.Find(e => e.Id == id && e.Deleted == false);
+
+    if (employee != null)
+    {
+        employee.Deleted = true;
+        SerializeEmployees(employees);
+        return Results.Ok(employee.Id);
+    }
+
+    return Results.NotFound("Not Found");
+});
+
 app.Run();
 
 Employee DeserializeEmployee()

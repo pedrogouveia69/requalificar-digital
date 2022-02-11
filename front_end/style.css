@@ -1,8 +1,6 @@
+
 body {
-    padding: 0;
-    margin: 0;
     background-color: #ffff00;
-    color: aquamarine
 }
 
 table,
@@ -14,4 +12,59 @@ th {
 
 ul {
     list-style-type: none;
+}
+
+img{
+    width: 188px;
+    height: 250px;
+    padding: 10px;
+}
+
+#maserati{
+    width: 20%;
+}  
+
+.p-class{
+    background-color: lightcoral;
+}
+
+.p-class-large{
+    font-size: xx-large;
+}
+
+#p-id{
+    color: blue;
+}
+
+#p-id2{
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+#btn-black{
+    background-color: black;
+    color: white;
+}
+
+#btn-yellow{
+    background-color: yellow;
+}
+
+.btn{
+    border-color: blueviolet;
+    width: 100px;
+    height: 50px;
+}
+
+#flex{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#first{
+    order: 1;
 }
