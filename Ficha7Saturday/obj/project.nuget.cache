@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "X/ncOoF/Az92Zu0u0tYX4hGV2pHeI8ulCoRWYFi94ibeAQFIgzWO6+uGmI7jI8lWEP03YPwusIrD/i/0x5/7dw==",
+  "success": true,
+  "projectFilePath": "D:\\github\\requalificar-digital\\Ficha7Saturday\\Ficha7Saturday.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\decke\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\decke\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\decke\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\decke\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\decke\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\decke\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
