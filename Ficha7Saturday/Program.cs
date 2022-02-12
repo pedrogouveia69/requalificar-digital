@@ -1,27 +1,25 @@
 using Ficha7Saturday;
 using System.Text.Json;
 
+var emps = JsonDeserialize();
+
 Employees JsonDeserialize()
 {
-    string jsonData = "";
     try 
     {
-        jsonData = File.ReadAllText("employees.json");
+        return JsonSerializer.Deserialize<Employees>(File.ReadAllText("employees.json"));
     }
     catch (FileNotFoundException ex)
     {
         Console.WriteLine(ex.Message);
-        File.WriteAllText("employees.json", "{\"EmployeeList\": []}");
-        jsonData = File.ReadAllText("employees.json");
+        File.WriteAllText("employees.json", "{\"EmployeeList\":[]}");
+        return new Employees();
     }
-    return JsonSerializer.Deserialize<Employees>(jsonData);
 }
-
-var emps = JsonDeserialize();
 
 void JsonSerialize() 
 {
-    File.WriteAllText("test.json", JsonSerializer.Serialize<Employees>(emps));
+    File.WriteAllText("employees.json", JsonSerializer.Serialize<Employees>(emps));
 }
 
 var builder = WebApplication.CreateBuilder(args);
@@ -61,7 +59,7 @@ app.MapGet("/employees/download", () =>
     JsonSerialize();
     try
     {
-        return Results.File(File.ReadAllBytes("test.json"), null, "employees.json");
+        return Results.File(File.ReadAllBytes("employees.json"), null, "employees.json");
     }
     catch (Exception ex)
     {
@@ -77,8 +75,7 @@ app.MapPost("/employees", (Employee e) =>
     }
     else
     {
-        var lastEmp = emps.EmployeeList.Last();
-        e.UserId = lastEmp.UserId + 1;
+        e.UserId = emps.EmployeeList.Last().UserId + 1;
     }
 
     emps.EmployeeList.Add(e);
@@ -92,13 +89,13 @@ app.MapPut("/employees/{id:int}", (int id, Employee putEmp) =>
     if (e != null)
     {
         e.JobTitle = putEmp.JobTitle;
-        e.LastName = putEmp.LastName;
-        e.PhoneNumber = putEmp.PhoneNumber;
         e.FirstName = putEmp.FirstName;
-        e.Region = putEmp.Region;
-        e.EmailAddress = putEmp.EmailAddress;
+        e.LastName = putEmp.LastName;
         e.EmployeeCode = putEmp.EmployeeCode;
-
+        e.Region = putEmp.Region;
+        e.PhoneNumber = putEmp.PhoneNumber; 
+        e.EmailAddress = putEmp.EmailAddress;
+        
         return Results.Ok(e);
     }
     else

@@ -25,4 +25,3 @@ D:\github\requalificar-digital\Ficha7Saturday\obj\Debug\net6.0\Ficha7Saturday.dl
 D:\github\requalificar-digital\Ficha7Saturday\obj\Debug\net6.0\ref\Ficha7Saturday.dll
 D:\github\requalificar-digital\Ficha7Saturday\obj\Debug\net6.0\Ficha7Saturday.pdb
 D:\github\requalificar-digital\Ficha7Saturday\obj\Debug\net6.0\Ficha7Saturday.genruntimeconfig.cache
-D:\github\requalificar-digital\Ficha7Saturday\bin\Debug\net6.0\test.json
