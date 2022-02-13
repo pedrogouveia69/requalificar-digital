@@ -60,6 +60,7 @@
         {
             if (saldo >= quantia)
             {
+                saldo -= quantia;
                 conta.saldo += quantia;
                 Console.WriteLine("Foi transferida a quantia {0} para a conta com o NUM {1}", quantia, conta.NumConta);
             }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\decke\\Downloads\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj": {}
+    "D:\\github\\requalificar-digital\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj": {}
   },
   "projects": {
-    "C:\\Users\\decke\\Downloads\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj": {
+    "D:\\github\\requalificar-digital\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\decke\\Downloads\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj",
+        "projectUniqueName": "D:\\github\\requalificar-digital\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj",
         "projectName": "Pedro_Gouveia_2019419",
-        "projectPath": "C:\\Users\\decke\\Downloads\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj",
+        "projectPath": "D:\\github\\requalificar-digital\\Pedro_Gouveia_2019419\\Pedro_Gouveia_2019419.csproj",
         "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\decke\\Downloads\\Pedro_Gouveia_2019419\\obj\\",
+        "outputPath": "D:\\github\\requalificar-digital\\Pedro_Gouveia_2019419\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
