@@ -12,9 +12,9 @@
         }
         public void grantWish() 
         {
-            Console.WriteLine("Insira o seu desejo:");
+            Console.WriteLine("What is it that you wish?");
             Wishes.Add(Console.ReadLine());
-            Console.WriteLine("Wish granted");
+            Console.WriteLine("Wish granted.");
             grantedWishes++;
         }
     }

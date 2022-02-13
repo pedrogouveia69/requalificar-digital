@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\requalificar-digital\\c_sharp\\GenioLampada\\GenioLampada\\GenioLampada.csproj",
-      "projectName": "GenioLampada",
-      "projectPath": "D:\\github\\requalificar-digital\\c_sharp\\GenioLampada\\GenioLampada\\GenioLampada.csproj",
+      "projectUniqueName": "D:\\github\\requalificar-digital\\c_sharp\\Canil\\ConsoleApp6.csproj",
+      "projectName": "ConsoleApp6",
+      "projectPath": "D:\\github\\requalificar-digital\\c_sharp\\Canil\\ConsoleApp6.csproj",
       "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\requalificar-digital\\c_sharp\\GenioLampada\\GenioLampada\\obj\\",
+      "outputPath": "D:\\github\\requalificar-digital\\c_sharp\\Canil\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",

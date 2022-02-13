@@ -3,20 +3,18 @@
     public class MagicLamp
     {
         private int numberOfGenies;
-        private int rechargeCounter; // saber qtas vezes já foi recarregada
+        private int rechargeCounter;
         private int startingNumberOfGenies;
 
-        //composiçao -----------------------
         public GoodGenie GoodGenie { get; } 
         public BadGenie BadGenie { get; }
         public  Demon Demon { get; }
-        //----------------------------------
 
-        public MagicLamp(int numberOfGenies) // construtor
+        public MagicLamp(int numberOfGenies)
         {
             this.numberOfGenies = numberOfGenies;
             startingNumberOfGenies = numberOfGenies;
-            GoodGenie = new GoodGenie(); //inicializar
+            GoodGenie = new GoodGenie();
             BadGenie = new BadGenie();
             Demon = new Demon();
         }
@@ -64,13 +62,11 @@
                 }
             }
         }
-
         public void recharge() 
         {
             Console.WriteLine("Lamp recharged.");
             numberOfGenies = startingNumberOfGenies; 
             rechargeCounter++;
         }
-
     }
 }
