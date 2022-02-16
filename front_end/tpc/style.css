@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Container holding the image and the text */
+#scroll-down, #scroll-up, #less-height {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+ 
+  /* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+#demo{
+    padding: 80px;
+}
+
+#text{
+    text-transform: lowercase;
+    line-height: 1.5;
+    text-indent: 100px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.no-bg{
+    background-color: transparent;
+}
+
+#black-bar{
+    background-color: rgb(52, 52, 52);
+    padding: 80px;
+    height: 100px;
+}
