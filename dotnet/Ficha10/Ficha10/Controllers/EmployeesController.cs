@@ -46,18 +46,10 @@ namespace Ficha10.Controllers
         // Efetuar download da lista atual de funcionários como um ficheiro .json
         [HttpGet("/Employees/Download")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Download()
+        public IActionResult GetDownload()
         {
             System.IO.File.WriteAllText("employees.json", JsonSerializer.Serialize(employees));
-            try
-            {
-                return File(System.IO.File.ReadAllBytes("employees.json"), null, "employees.json");
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
+            return File(System.IO.File.ReadAllBytes("employees.json"), "application/json");
         }
 
         // Adicionar um novo funcionário, o ID deve ser gerado automaticamente tendo em conta o número de funcionários existentes.
@@ -65,7 +57,7 @@ namespace Ficha10.Controllers
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult Post ([FromBody] Employee e)
+        public IActionResult Post([FromBody] Employee e)
         {
             if (employees.EmployeesList.Count == 0)
             {

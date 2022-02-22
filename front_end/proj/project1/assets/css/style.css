@@ -345,10 +345,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 55px;
 }
 #hero .carousel-content {
-  background: rgba(4, 4, 4, 0.7);
+  background: rgba(4, 4, 4, .9);
   padding: 20px;
   color: #fff;
-  border-top: 5px solid #c1121f;
+  border-bottom: 5px solid #c1121f;
 }
 #hero .carousel-content h2 {
   color: #fff;
