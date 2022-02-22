@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha7Saturday\\Ficha7Saturday.csproj": {}
+    "C:\\Users\\Net04\\Desktop\\Ficha10\\Ficha10\\Ficha10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha7Saturday\\Ficha7Saturday.csproj": {
+    "C:\\Users\\Net04\\Desktop\\Ficha10\\Ficha10\\Ficha10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha7Saturday\\Ficha7Saturday.csproj",
-        "projectName": "Ficha7Saturday",
-        "projectPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha7Saturday\\Ficha7Saturday.csproj",
+        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\Ficha10\\Ficha10\\Ficha10.csproj",
+        "projectName": "Ficha10",
+        "projectPath": "C:\\Users\\Net04\\Desktop\\Ficha10\\Ficha10\\Ficha10.csproj",
         "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha7Saturday\\obj\\",
+        "outputPath": "C:\\Users\\Net04\\Desktop\\Ficha10\\Ficha10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",

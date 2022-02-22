@@ -64,7 +64,7 @@ app.MapGet("/employees/download", () =>
     catch (Exception ex)
     {
         return Results.NotFound(ex.Message);
-    }   
+    }
 });
 
 app.MapPost("/employees", (Employee e) =>
@@ -93,9 +93,9 @@ app.MapPut("/employees/{id:int}", (int id, Employee putEmp) =>
         e.LastName = putEmp.LastName;
         e.EmployeeCode = putEmp.EmployeeCode;
         e.Region = putEmp.Region;
-        e.PhoneNumber = putEmp.PhoneNumber; 
+        e.PhoneNumber = putEmp.PhoneNumber;
         e.EmailAddress = putEmp.EmailAddress;
-        
+
         return Results.Ok(e);
     }
     else

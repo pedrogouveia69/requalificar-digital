@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hT0yWoUYJi5Z+VnCQNnY0NHhBVMrbayAZ3lWHVo8gLecVnt+p65Eke8HU7EhgFQ++5SNp7o7MC/ZKuiz6bbWQA==",
+  "dgSpecHash": "cSLP9diOmgPc25PDtbB1zLsS5YyIApkth3ROiORQiOPh5AW+Q0ROtf73+nYfBQ9KWz5LO/6JPbDeg7o8hgMCAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha7Saturday\\Ficha7Saturday.csproj",
+  "projectFilePath": "C:\\Users\\Net04\\Desktop\\Ficha10\\Ficha10\\Ficha10.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Net04\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Net04\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
