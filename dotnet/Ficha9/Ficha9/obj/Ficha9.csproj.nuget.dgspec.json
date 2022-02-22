@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net04\\Desktop\\Ficha9\\Ficha9\\Ficha9.csproj": {}
+    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha9\\Ficha9\\Ficha9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net04\\Desktop\\Ficha9\\Ficha9\\Ficha9.csproj": {
+    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha9\\Ficha9\\Ficha9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\Ficha9\\Ficha9\\Ficha9.csproj",
+        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha9\\Ficha9\\Ficha9.csproj",
         "projectName": "Ficha9",
-        "projectPath": "C:\\Users\\Net04\\Desktop\\Ficha9\\Ficha9\\Ficha9.csproj",
+        "projectPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha9\\Ficha9\\Ficha9.csproj",
         "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\Desktop\\Ficha9\\Ficha9\\obj\\",
+        "outputPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha9\\Ficha9\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",

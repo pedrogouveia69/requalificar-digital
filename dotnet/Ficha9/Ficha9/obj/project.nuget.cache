@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CivLAE4ehgkiacp6CyevvOVjZak+1NgjW97IpDfsYFDvmckvs3eX3f0QKI8cQDGD/eCdQB8EkQpUkdCxpsMIKg==",
+  "dgSpecHash": "uZUcrJv9p1bt0KOR1NLL7YAotehGi2tnV5tNnn3Rs5RoNhI8PMVRpHYiRGbaGkwc8WJRwH/0ZGSmrYqSmdapVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Net04\\Desktop\\Ficha9\\Ficha9\\Ficha9.csproj",
+  "projectFilePath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha9\\Ficha9\\Ficha9.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Net04\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Net04\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

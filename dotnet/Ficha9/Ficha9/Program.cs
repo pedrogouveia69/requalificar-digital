@@ -37,6 +37,7 @@ app.Use(async (context, next) =>
 });
 */
 
-app.MapGet("/", () => Results.Ok("DEFAULT")); 
+app.MapGet("/", () => Results.Ok("HOME"));
+app.MapGet("/test", () => Results.Ok("TEST"));
 
 app.Run();

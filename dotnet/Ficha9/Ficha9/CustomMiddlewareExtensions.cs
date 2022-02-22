@@ -6,10 +6,5 @@
         {
             return builder.UseMiddleware<CustomMiddleware>();
         }
-
-        public static IApplicationBuilder UseLoggerMiddleware(this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<LoggerMiddleware>();
-        }
     }
 }
