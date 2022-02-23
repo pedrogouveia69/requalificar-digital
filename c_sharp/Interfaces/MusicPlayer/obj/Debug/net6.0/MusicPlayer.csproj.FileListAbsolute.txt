@@ -1,0 +1,15 @@
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\bin\Debug\net6.0\MusicPlayer.exe
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\bin\Debug\net6.0\MusicPlayer.deps.json
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\bin\Debug\net6.0\MusicPlayer.runtimeconfig.json
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\bin\Debug\net6.0\MusicPlayer.dll
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\bin\Debug\net6.0\ref\MusicPlayer.dll
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\bin\Debug\net6.0\MusicPlayer.pdb
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.csproj.AssemblyReference.cache
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.AssemblyInfoInputs.cache
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.AssemblyInfo.cs
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.csproj.CoreCompileInputs.cache
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.dll
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\ref\MusicPlayer.dll
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.pdb
+D:\github\requalificar-digital\c_sharp\Interfaces\MusicPlayer\obj\Debug\net6.0\MusicPlayer.genruntimeconfig.cache
