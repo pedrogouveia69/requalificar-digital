@@ -49,7 +49,7 @@ namespace Ficha10.Controllers
         public IActionResult GetDownload()
         {
             System.IO.File.WriteAllText("employees.json", JsonSerializer.Serialize(employees));
-            return File(System.IO.File.ReadAllBytes("employees.json"), "application/json");
+            return File(System.IO.File.ReadAllBytes("employees.json"), "application/json", "test.json");
         }
 
         // Adicionar um novo funcionário, o ID deve ser gerado automaticamente tendo em conta o número de funcionários existentes.
