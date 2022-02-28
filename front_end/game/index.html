@@ -6,16 +6,20 @@
 </head>
 
 <body>
+    <div id="turn-indicator">
+        <h1>Your Turn</h1>
+    </div>
     <div class="game-main">
         <div class="healthBar">
-            <div id="myHealth"><strong>Critical</strong></div>
-            <button onclick="hit()"> Attack </button>
-            <button onclick="heal()"> Heal </button>
-            <button onclick="reset()"> Reset </button>
+            <div id="myHealth"></div>
+            <button id="hit" onclick="hit()"> Attack </button>
+            <button id="heal" onclick="heal()" disabled ="true"> Heal </button>
         </div>
 
         <div class="healthBar">
-            <div id="enemyHealth"><strong>Critical</strong></div>
+            <div id="enemyHealth"></div>
+            <button id="enemy-hit" onclick="hit()"> Attack </button>
+            <button id="enemy-heal" onclick="heal()" disabled ="true"> Heal </button>
         </div>
     </div>
 </body>
@@ -25,6 +29,13 @@
 <style>
     body {
         background-color: #cecece;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    h1 {
+        width: 100%;
+        animation: flash linear 2s infinite;
     }
 
     h2 {
@@ -45,14 +56,18 @@
         width: 500px;
         background-color: green;
         border-radius: 23px;
-        -webkit-animation: flash linear 2s infinite;
-        animation: flash linear 2s infinite;
+        /* -webkit-animation: flash linear 2s infinite; */
+        /* animation: flash linear 2s infinite; */
         text-align: center;
     }
 
     .game-main {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+
+    #turn-indicator {
+        display: flex;
     }
 
     @-webkit-keyframes flash {

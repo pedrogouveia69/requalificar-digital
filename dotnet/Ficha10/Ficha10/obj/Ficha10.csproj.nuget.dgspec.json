@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj": {}
+    "D:\\github\\requalificar-digital\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj": {
+    "D:\\github\\requalificar-digital\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj",
+        "projectUniqueName": "D:\\github\\requalificar-digital\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj",
         "projectName": "Ficha10",
-        "projectPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj",
-        "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\obj\\",
+        "projectPath": "D:\\github\\requalificar-digital\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj",
+        "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\requalificar-digital\\dotnet\\Ficha10\\Ficha10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
