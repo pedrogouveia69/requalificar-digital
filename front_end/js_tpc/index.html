@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="game-main">
+        <div class="healthBar">
+            <div id="myHealth"><strong>Critical</strong></div>
+            <button onclick="hit()"> Attack </button>
+            <button onclick="heal()"> Heal </button>
+            <button onclick="reset()"> Reset </button>
+        </div>
+
+        <div class="healthBar">
+            <div id="enemyHealth"><strong>Critical</strong></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        background-color: #cecece;
+    }
+
+    h2 {
+        color: #093426;
+    }
+
+    .healthBar {
+        height: 30px;
+        width: 500px;
+        background-color: lightgrey;
+        border-radius: 23px;
+        border: 2px solid grey;
+    }
+
+    #myHealth,
+    #enemyHealth {
+        height: 30px;
+        width: 500px;
+        background-color: green;
+        border-radius: 23px;
+        -webkit-animation: flash linear 2s infinite;
+        animation: flash linear 2s infinite;
+        text-align: center;
+    }
+
+    .game-main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    @-webkit-keyframes flash {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: .1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes flash {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: .1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
