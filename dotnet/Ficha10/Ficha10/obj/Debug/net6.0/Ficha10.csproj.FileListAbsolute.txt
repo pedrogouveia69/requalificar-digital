@@ -70,7 +70,6 @@ C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\bin\Debug\net6.0\Microsoft.O
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.csproj.AssemblyReference.cache
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.AssemblyInfoInputs.cache
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.AssemblyInfo.cs

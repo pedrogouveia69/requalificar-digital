@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj": {}
+    "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\Ficha11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj": {
+    "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\Ficha11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj",
-        "projectName": "Ficha10",
-        "projectPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\Ficha10.csproj",
+        "projectUniqueName": "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\Ficha11.csproj",
+        "projectName": "Ficha11",
+        "projectPath": "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\Ficha11.csproj",
         "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha10\\Ficha10\\obj\\",
+        "outputPath": "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,12 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +50,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
