@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\Ficha11.csproj",
+      "projectUniqueName": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha11\\Ficha11\\Ficha11.csproj",
       "projectName": "Ficha11",
-      "projectPath": "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\Ficha11.csproj",
+      "projectPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha11\\Ficha11\\Ficha11.csproj",
       "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Net04\\Desktop\\Ficha11\\Ficha11\\obj\\",
+      "outputPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\Ficha11\\Ficha11\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",

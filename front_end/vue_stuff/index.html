@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{ message }}
+        <input v-model="message">
+        <br><br>
+
+        <button @click="count++">
+            Count is: {{ count }}
+        </button>
+        <br><br>
+
+        <input type="checkbox" id="vehicle1" value="Bike" v-model="checkedVehicles">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" value="Car" v-model="checkedVehicles">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" value="Boat" v-model="checkedVehicles">
+        <label for="vehicle3"> I have a boat</label><br>
+        <span>Checked vehicles: {{checkedVehicles}}</span>
+        <br><br>
+
+        <input type="radio" id="html" name="fav_language" value="HTML" v-model="picked">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS" v-model="picked">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript" v-model="picked">
+        <label for="javascript">JavaScript</label><br>
+        <span>Picked: {{picked}}</span>
+        <br><br>
+
+        <select name="cars" id="cars" v-model="selected">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <span>Selected: {{selected}}</span>
+        <br><br>
+
+        <ul id="example-2">
+            <li v-for="(item, index) in items">
+                {{parentMessage}} - {{index}} - {{item.message}}
+            </li>
+        </ul>
+
+        <ul>
+            <li v-for="n in countdown">{{n}}</li>
+        </ul>
+
+        <ul>
+            <li v-for="(fruit, i) in fruits">{{i}} - {{fruit}}</li>
+        </ul>
+
+        <ul>
+            <li v-for="(value, key, index) in profile">{{key}} - {{value}}</li>
+        </ul>
+
+        <div v-if="count > 10">>10</div>
+        <div v-else-if="count == 10">==10</div>
+        <div v-else>&lt10</div>
+
+        <div v-show="count > 10">>10</div>
+        <div v-show="count == 10">==10</div>
+        <div v-show="count &lt 10">&lt10</div>
+        <br><br>
+
+        <button v-on:click="count +=1">Increase</button>
+        <button v-on:click="count -=1">Decrease</button>
+        <br><br>
+
+        <button v-on:click="greet('Hello')">Hello</button>
+        <button v-on:click="greet('Hi')">Hi</button>
+        <button v-on:click="greet('Namaste')">Namaste</button>
+        <br>
+        {{greeting}}
+        <br><br>
+
+        <label>Type your name:</label>
+        <input type="text" v-model="name"/><br>
+        Your name is {{name}}<br>
+        And is {{charcount}} characters long
+    </div>
+</body>
+
+</html>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            message: 'Hello Vue.js!',
+            count: 0,
+            checkedVehicles: [],
+            picked: [],
+            selected: '',
+            parentMessage: 'Parent',
+            items: [
+                { message: 'Foo' },
+                { message: 'Bar' }
+            ],
+            countdown: [3, 2, 1],
+            fruits: ['Apple', 'Banana'],
+            profile: {
+                name: 'Pedro',
+                age: 25
+            },
+            count: 1,
+            greeting: '',
+            name: ''
+        },
+        methods: {
+            greet: function(greeting){
+                this.greeting = greeting + ' how are you?'
+            }
+        },
+        computed: {
+            charcount: function(){
+                return this.name.length
+            }
+        }
+    });
+</script>
