@@ -84,3 +84,4 @@ C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.dll
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\ref\Ficha10.dll
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.pdb
 C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.genruntimeconfig.cache
+C:\Users\Net04\Desktop\repos\dotnet\Ficha10\Ficha10\obj\Debug\net6.0\Ficha10.csproj.AssemblyReference.cache

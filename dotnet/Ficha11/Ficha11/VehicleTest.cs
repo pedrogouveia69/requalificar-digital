@@ -2,13 +2,13 @@
 {
     public class VehicleTest
     {
-        private Car car;
+        private IVehicle vehicle;
 
-        public VehicleTest(Car car)
+        public VehicleTest(IVehicle vehicle)
         {
-            this.car = car;
+            this.vehicle = vehicle;
         }
 
-        public Car Car { get { return car; } }
+        public IVehicle Vehicle { get { return vehicle; } }
     }
 }

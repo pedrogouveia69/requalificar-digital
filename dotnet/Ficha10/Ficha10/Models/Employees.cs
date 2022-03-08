@@ -1,12 +1,18 @@
-﻿namespace Ficha7Saturday
+﻿using Ficha10;
+using Ficha10.Models;
+
+namespace Ficha7Saturday
 {
-    public class Employees
+    public class Employees : IEmployees
     {
+        private List<Employee> employeesList;
+
         public Employees()
         {
-            EmployeesList = new List<Employee>();
+            employeesList = JsonLoader.DeserializeEmployees();
         }
-        public List<Employee> EmployeesList { get; set;}
 
+        public List<Employee> EmployeesList { get { return employeesList; } set { employeesList = value; } }
+        
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Ficha11
 {
-    public abstract class Vehicle
+    public abstract class Vehicle : IVehicle
     {
         private Travel travel;
         private string color;
@@ -25,6 +25,11 @@
         public string Brand { get { return brand; } set { brand = value; } }
         public string Model { get { return model; } set { model = value; } }
         public Engine Engine { get { return engine; } set { engine = value; } }
+
+        public void Drive()
+        {
+            throw new NotImplementedException();
+        }
 
         public abstract void Start(); 
     }

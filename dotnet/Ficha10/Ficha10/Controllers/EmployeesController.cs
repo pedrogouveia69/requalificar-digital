@@ -1,4 +1,5 @@
-﻿using Ficha7Saturday;
+﻿using Ficha10.Models;
+using Ficha7Saturday;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
 using System.Text.Json;
@@ -9,11 +10,11 @@ namespace Ficha10.Controllers
     [Route("[controller]")]
     public class EmployeesController : ControllerBase
     {
-        private Employees employees;
+        private readonly IEmployees employees;
 
-        public EmployeesController()
+        public EmployeesController(IEmployees employees)
         {
-            employees = JsonLoader.DeserializeEmployees();
+            this.employees = employees;
         }
 
         // Listar todos os funcionários existentes no ficheiro e devolver os mesmos na resposta

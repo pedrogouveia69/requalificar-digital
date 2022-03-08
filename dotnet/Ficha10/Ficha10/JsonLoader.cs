@@ -1,4 +1,5 @@
-﻿using Ficha7Saturday;
+﻿using Ficha10.Models;
+using Ficha7Saturday;
 using FREQ_2019419;
 using System.Text.Json;
 
@@ -6,9 +7,9 @@ namespace Ficha10
 {
     public class JsonLoader
     {
-        public static Employees DeserializeEmployees()
+        public static List<Employee> DeserializeEmployees()
         {
-            return JsonSerializer.Deserialize<Employees>(File.ReadAllText("employees.json"));
+            return JsonSerializer.Deserialize<List<Employee>>(File.ReadAllText("employees.json"));
         }
 
         public static Characters DeserializeCharacters()
