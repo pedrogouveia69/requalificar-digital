@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Net04\\.nuget\\packages\\": {}
+    "C:\\Users\\decke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\MVC\\MVC\\MVC.csproj",
+      "projectUniqueName": "D:\\github\\requalificar-digital\\dotnet\\MVC\\MVC\\MVC.csproj",
       "projectName": "MVC",
-      "projectPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\MVC\\MVC\\MVC.csproj",
-      "packagesPath": "C:\\Users\\Net04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Net04\\Desktop\\repos\\dotnet\\MVC\\MVC\\obj\\",
+      "projectPath": "D:\\github\\requalificar-digital\\dotnet\\MVC\\MVC\\MVC.csproj",
+      "packagesPath": "C:\\Users\\decke\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\requalificar-digital\\dotnet\\MVC\\MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Net04\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\decke\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

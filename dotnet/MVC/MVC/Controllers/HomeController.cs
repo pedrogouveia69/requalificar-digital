@@ -1,7 +1,6 @@
-﻿using Ficha10;
-using Ficha10.Controllers;
+﻿
+using Ficha10.Models;
 using Ficha7Saturday;
-using FREQ_2019419;
 using Microsoft.AspNetCore.Mvc;
 using MVC.Models;
 using System.Diagnostics;
@@ -19,8 +18,7 @@ namespace MVC.Controllers
 
         public IActionResult Index()
         {
-            var cc = new EmployeesController();
-            return View(new Employees(cc.Get().ToList()));
+            return View(new Employees());
         }
 
         public IActionResult Privacy()

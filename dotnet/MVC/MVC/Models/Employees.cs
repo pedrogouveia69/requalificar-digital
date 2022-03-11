@@ -12,11 +12,6 @@ namespace Ficha7Saturday
             employeesList = JsonLoader.DeserializeEmployees();
         }
 
-        public Employees(List<Employee> employeesList)
-        {
-            this.employeesList = employeesList;
-        }
-
         public List<Employee> EmployeesList { get { return employeesList; } set { employeesList = value; } }
         
     }
