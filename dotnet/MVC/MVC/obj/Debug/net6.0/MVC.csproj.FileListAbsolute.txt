@@ -27,7 +27,6 @@ C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.pdb
 C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.genruntimeconfig.cache
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\appsettings.Development.json
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\appsettings.json
-D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\characters.json
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\employees.json
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.staticwebassets.runtime.json
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.exe
@@ -36,7 +35,6 @@ D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.runtimeconfig
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.dll
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\ref\MVC.dll
 D:\github\requalificar-digital\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.pdb
-D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.csproj.AssemblyReference.cache
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.GeneratedMSBuildEditorConfig.editorconfig
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.AssemblyInfoInputs.cache
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.AssemblyInfo.cs
@@ -53,3 +51,4 @@ D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.dll
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\ref\MVC.dll
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.pdb
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.genruntimeconfig.cache
+D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.csproj.AssemblyReference.cache

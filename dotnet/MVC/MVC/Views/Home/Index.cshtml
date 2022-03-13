@@ -1,5 +1,4 @@
-﻿@using FREQ_2019419
-@using Ficha10.Models
+﻿@using Ficha10.Models
 @using Ficha7Saturday
 @model IEmployees
 
@@ -7,18 +6,34 @@
     ViewData["Title"] = "Home Page";
 }
 
-<ul>
-@foreach (var employee in Model.EmployeesList)
-{
-    <li>
-        @Html.DisplayFor(e => employee.FirstName)
-        @Html.DisplayFor(e => employee.LastName)
-    </li>
-}
-</ul>
+<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">UserId</th>
+      <th scope="col">JobTitle</th>
+      <th scope="col">Name</th>
+      <th scope="col">EmailAddress</th>
+      <th scope="col">PhoneNumber</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var employee in Model.EmployeesList)
+    {
+        <tr>
+            <td>@Html.DisplayFor(e => employee.UserId)</td>
+            <td>@Html.DisplayFor(e => employee.JobTitle) </td> 
+            <td>@Html.DisplayFor(e => employee.FirstName) @Html.DisplayFor(e => employee.LastName)</td>
+            <td>@Html.DisplayFor(e => employee.EmailAddress)</td>
+            <td>@Html.DisplayFor(e => employee.PhoneNumber)</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+       </tr>
+       
+    }
+  </tbody>
+</table>
 
-
-<div class="text-center">
-    <h1 class="display-4">assdafs</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<button type="button" class="btn btn-dark">Add</button>
