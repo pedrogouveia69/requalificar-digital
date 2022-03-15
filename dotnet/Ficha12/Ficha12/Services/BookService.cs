@@ -13,12 +13,23 @@ namespace Ficha12.Services
         }
         public Book Create(Book book)
         {
-            throw new NotImplementedException();
+            var publisher = context.Publishers.Find(book.Publisher.Id);
+            if (publisher != null)
+            {
+                context.Books.Add(book);
+                context.SaveChanges();
+            }            
+            return book;
         }
 
         public void DeleteByISBN(string isbn)
         {
-            throw new NotImplementedException();
+            var book = context.Books.SingleOrDefault(b => b.ISBN == isbn);
+            if (book != null)
+            {
+                context.Books.Remove(book);
+                context.SaveChanges();
+            }
         }
 
         public IEnumerable<Book> GetAll()
@@ -31,14 +42,29 @@ namespace Ficha12.Services
             return context.Books.Include(p => p.Publisher).SingleOrDefault(b => b.ISBN == isbn);
         }
 
-        public void Update(string isbn, Book book)
+        public void Update(string isbn, Book b)
         {
-            throw new NotImplementedException();
+            var book = context.Books.SingleOrDefault(b => b.ISBN == isbn);
+            if (book != null)
+            {
+                book.ISBN = b.ISBN;
+                book.Publisher = b.Publisher;
+                book.Author = b.Author; 
+                book.Pages = b.Pages;
+                book.Language = b.Language;
+                book.Title = b.Title;
+                context.SaveChanges();
+            }
         }
 
         public void UpdatePublisher(string isbn, int publisherId)
         {
-            throw new NotImplementedException();
+            var book = context.Books.SingleOrDefault(b => b.ISBN == isbn);
+            if (book != null)
+            {
+                book.Publisher.Id = publisherId;
+                context.SaveChanges();                
+            }
         }
     }
 }

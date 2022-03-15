@@ -1,6 +1,5 @@
 C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\bin\Debug\net6.0\appsettings.json
-C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\bin\Debug\net6.0\characters.json
 C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\bin\Debug\net6.0\employees.json
 C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.staticwebassets.runtime.json
 C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\bin\Debug\net6.0\MVC.exe
@@ -52,3 +51,4 @@ D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\ref\MVC.dll
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.pdb
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.genruntimeconfig.cache
 D:\github\requalificar-digital\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.csproj.AssemblyReference.cache
+C:\Users\Net04\Desktop\repos\dotnet\MVC\MVC\obj\Debug\net6.0\MVC.csproj.AssemblyReference.cache
