@@ -6,7 +6,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" :style="{ backgroundImage: 'url(' + image + ')' }">
+        <div class="carousel-item active" :style="{'background-image':'url(~@/assets/img/slide/1.jpg'}">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>NISMO</span></h2>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(@/assets/img/slide/2.jpg);">
+        <div class="carousel-item" :style="{'background-image':'url(~@/assets/img/slide/2.jpg'}">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Lorem Ipsum Dolor</h2>
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(@/assets/img/slide/3.jpg);">
+        <div class="carousel-item" :style="{'background-image':'url(~@/assets/img/slide/3.jpg'}">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Sequi ea ut et est quaerat</h2>
@@ -211,14 +211,4 @@
 
   </main><!-- End #main -->
 </template>
-<script>
-export default 
-{
-  data() {
-    return {
-      image: "@/assets/img/slide/1.jpg"
-    };
-  },
-}
-</script>
 

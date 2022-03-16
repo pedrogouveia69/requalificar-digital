@@ -1,14 +1,8 @@
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+
+  #stop-sign{
+    width: 170px;
   }
-  
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
-  }
-  
+
   #notfound {
     position: relative;
     height: 100vh;
@@ -45,7 +39,7 @@
   }
   
   .notfound .notfound-404 h1 {
-    font-family: 'Chango', cursive;
+    font-family: 'NissanOpti';
     color: #fff;
     font-size: 118px;
     margin: 0px;
@@ -61,7 +55,7 @@
   }
   
   .notfound h2 {
-    font-family: 'Chango', cursive;
+    font-family: 'NissanOpti';
     font-size: 68px;
     color: #222;
     font-weight: 400;
@@ -102,9 +96,5 @@
     .notfound h2 {
       font-size: 42px;
     }
-  }
-  
-  img{
-   width: 170px;
   }
   

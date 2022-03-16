@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import ContactView from '@/views/ContactView.vue'
 import PricingView from '@/views/PricingView.vue'
 import LoginView from "@/views/LoginView.vue"
+import ErrorView from '@/views/ErrorView.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'error',
+    component: ErrorView
   },
 ]
 
