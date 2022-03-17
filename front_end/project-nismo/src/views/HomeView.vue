@@ -6,7 +6,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" :style="{'background-image':'url(~@/assets/img/slide/1.jpg'}">
+        <div class="carousel-item active">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>NISMO</span></h2>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" :style="{'background-image':'url(~@/assets/img/slide/2.jpg'}">
+        <div class="carousel-item">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Lorem Ipsum Dolor</h2>
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" :style="{'background-image':'url(~@/assets/img/slide/3.jpg'}">
+        <div class="carousel-item">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Sequi ea ut et est quaerat</h2>
@@ -43,7 +43,7 @@
 
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
       </a>
 
@@ -51,7 +51,7 @@
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
       </a>
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol> -->
 
     </div>
   </section><!-- End Hero -->
