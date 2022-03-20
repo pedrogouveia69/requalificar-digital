@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <body v-if="!isMobile()">
     <div class="container" id="container" ref="container">
       <div class="form-container sign-up-container">
         <div class="form-subcontainer">
@@ -27,7 +27,6 @@
           <span v-if="error_message.length > 0">{{ error_message }}</span>
         </div>
       </div>
-
       <div class="form-container sign-in-container">
         <div class="form-subcontainer">
           <img class="logo" src="@/assets/img/nismo-logo.png" />
@@ -68,6 +67,48 @@
       </div>
     </div>
   </body>
+
+  <body v-if="isMobile()">
+    <div class="form-subcontainer" v-show="pannel">
+      <img class="logo" src="@/assets/img/nismo-logo.png" />
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        v-model="email_login"
+      />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        v-model="password_login"
+      />
+      <button @click="validateLoginInputs">Login</button>
+      <br />
+      <span v-if="error_message.length > 0">{{ error_message }}</span>
+      <a href="#" @click="pannel = !pannel">Don't have an account?</a>
+    </div>
+    <div class="form-subcontainer" v-show="!pannel">
+      <img class="logo" src="@/assets/img/nismo-logo.png" />
+      <input type="email" id="reg-email" placeholder="Email" v-model="email" />
+      <input
+        type="password"
+        id="reg-password"
+        placeholder="Password"
+        v-model="password"
+      />
+      <input
+        type="password"
+        id="reg-password-confirm"
+        placeholder="Confirm Password"
+        v-model="password_confirm"
+      />
+      <button @click="validateRegisterInputs">Register</button>
+      <br />
+      <span v-if="error_message.length > 0">{{ error_message }}</span>
+      <a href="#" @click="pannel = !pannel">Already have an account?</a>
+    </div>
+  </body>
 </template>
 
 <script setup>
@@ -83,6 +124,8 @@ const password_login = ref("");
 const error_message = ref("");
 
 const router = useRouter(); // get a reference to our vue router
+
+var pannel = true;
 
 function validateRegisterInputs() {
   if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
@@ -136,6 +179,18 @@ const login = () => {
 function switchPanel() {
   error_message.value = "";
   container.classList.toggle("right-panel-active");
+}
+
+function isMobile() {
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 }
 </script>
 
@@ -224,8 +279,9 @@ input {
   font-size: 14px;
 }
 
-input:focus {
-  border: #c1121f;
+.input-error{
+  border: 1px solid #c1121f;
+  background-color: #ff00112c ;
 }
 
 .container {
