@@ -9,70 +9,71 @@
       </div>
     </section>
     <!-- End Breadcrumbs -->
-    <!-- ======= Hero Section ======= -->
-    <section id="street-flex">
-      <img id="street-car" src="../assets/img/Nissan-GT-R-NISMO-2021.jpg" />
-    </section>
-    <!-- End Hero -->
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+
+    <div v-for="(item, id) in carList" :key="id">
+      <section id="street-flex">
+        <img id="street-car" :src="item.imageUrl" style="width:630px"/>
+      </section>
+      <!-- End Hero -->
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+              <div class="box featured">
+                <h3>Business</h3>
+                <h4><sup>$</sup>{{item.basePrice}}</h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li class="na">Pharetra massa</li>
+                  <li class="na">Massa ultricies mi</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Buy Now</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+              <div class="box">
+                <h3>Developer</h3>
+                <h4><sup>$</sup>{{item.basePrice * 1.3}}</h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li class="na">Massa ultricies mi</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Buy Now</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+              <div class="box">
+                <span class="advanced">Advanced</span>
+                <h3>Ultimate</h3>
+                <h4><sup>$</sup>{{item.basePrice * 1.6}}</h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li>Massa ultricies mi</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Buy Now</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End Pricing Section -->
+      </section>
+    </div>
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -197,6 +198,28 @@
   </main>
   <!-- End #main -->
 </template>
+
+<script>
+import axios from "axios";
+
+export default {
+  name: "get-request-async-await",
+
+  data() {
+    return {
+      carList: null,
+    };
+  },
+  async created() {
+    // GET request using axios with async/await
+    const response = await axios.get(
+      "https://proj-web1-8efd2-default-rtdb.europe-west1.firebasedatabase.app/.json"
+    );
+    this.carList = response.data;
+  },
+};
+</script>
+
 
 <style scoped>
 /*--------------------------------------------------------------
