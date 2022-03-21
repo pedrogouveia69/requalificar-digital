@@ -3,19 +3,6 @@ import App from './App.vue'
 import router from './router'
 import firebase from 'firebase'
 
-// import Vue from 'vue'
-// import BootstrapVue from "bootstrap-vue"
-// import "bootstrap/dist/css/bootstrap.min.css"
-// import "bootstrap-vue/dist/bootstrap-vue.css"
-
-// Vue.use(BootstrapVue)
-
-// new Vue({
-//   el: '#app',
-//   render: h => h(App)
-// })
-
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
