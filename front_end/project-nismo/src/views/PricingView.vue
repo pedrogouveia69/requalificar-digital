@@ -33,7 +33,10 @@
                   <li class="na">Massa ultricies mi</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+                  <a href="#" class="btn-buy" v-if="isLoggedIn">Buy Now</a>
+                  <a href="/login" class="btn-buy" v-if="!isLoggedIn"
+                    >Login to Buy</a
+                  >
                 </div>
               </div>
             </div>
@@ -50,7 +53,10 @@
                   <li class="na">Massa ultricies mi</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+                  <a href="#" class="btn-buy" v-if="isLoggedIn">Buy Now</a>
+                  <a href="/login" class="btn-buy" v-if="!isLoggedIn"
+                    >Login to Buy</a
+                  >
                 </div>
               </div>
             </div>
@@ -68,7 +74,10 @@
                   <li>Massa ultricies mi</li>
                 </ul>
                 <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+                  <a href="#" class="btn-buy" v-if="isLoggedIn">Buy Now</a>
+                  <a href="/login" class="btn-buy" v-if="!isLoggedIn"
+                    >Login to Buy</a
+                  >
                 </div>
               </div>
             </div>
@@ -222,6 +231,24 @@ export default {
 };
 </script>
 
+<script setup>
+import firebase from "firebase";
+import { onBeforeUnmount } from "vue";
+import { ref } from "vue"; // used for conditional rendering
+
+const isLoggedIn = ref(false);
+
+const authListener = firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    isLoggedIn.value = true;
+  }
+});
+
+onBeforeUnmount(() => {
+  authListener();
+});
+</script>
+
 
 <style scoped>
 /*--------------------------------------------------------------
@@ -326,8 +353,9 @@ export default {
   justify-content: center;
 }
 
-h1{
-  font-family: 'NissanOpti'}
+h1 {
+  font-family: "NissanOpti";
+}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions

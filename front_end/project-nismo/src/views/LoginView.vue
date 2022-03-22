@@ -22,7 +22,7 @@
             placeholder="Confirm Password"
             v-model="password_confirm"
           />
-          <button @click="validateRegisterInputs">Register</button>
+          <button @click="checkIfPasswordsMatch">Register</button>
           <br />
           <span v-if="error_message.length > 0">{{ error_message }}</span>
         </div>
@@ -42,7 +42,7 @@
             placeholder="Password"
             v-model="password_login"
           />
-          <button @click="validateLoginInputs">Login</button>
+          <button @click="login">Login</button>
           <br />
           <span v-if="error_message.length > 0">{{ error_message }}</span>
         </div>
@@ -83,7 +83,7 @@
         placeholder="Password"
         v-model="password_login"
       />
-      <button @click="validateLoginInputs">Login</button>
+      <button @click="login">Login</button>
       <br />
       <span v-if="error_message.length > 0">{{ error_message }}</span>
       <a href="#" @click="pannel = !pannel">Don't have an account?</a>
@@ -103,7 +103,7 @@
         placeholder="Confirm Password"
         v-model="password_confirm"
       />
-      <button @click="validateRegisterInputs">Register</button>
+      <button @click="checkIfPasswordsMatch">Register</button>
       <br />
       <span v-if="error_message.length > 0">{{ error_message }}</span>
       <a href="#" @click="pannel = !pannel">Already have an account?</a>
@@ -125,31 +125,14 @@ const error_message = ref("");
 
 const router = useRouter(); // get a reference to our vue router
 
-var pannel = true;
-
-function validateRegisterInputs() {
-  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
-    error_message.value = "Invalid email address.";
-  } else if (password.value.length < 6) {
-    error_message.value = "Password must contain at least 6 characters.";
-  } else if (password.value != password_confirm.value) {
-    error_message.value = "Passwords do not match.";
+const checkIfPasswordsMatch = () => {
+  if (password.value != password_confirm.value) {
+    error_message.value = "Passwords do not match";
   } else {
     register();
   }
-}
+};
 
-function validateLoginInputs() {
-  if (
-    !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email_login.value)
-  ) {
-    error_message.value = "Invalid email address.";
-  } else if (password_login.value.length < 6) {
-    error_message.value = "Password must contain at least 6 characters.";
-  } else {
-    login();
-  }
-}
 const register = () => {
   firebase
     .auth() // get the auth api
@@ -168,7 +151,7 @@ const login = () => {
     .auth() // get the auth api
     .signInWithEmailAndPassword(email_login.value, password_login.value) // need .value because ref()
     .then((data) => {
-      router.push("/"); // redirect to the feed
+      router.push("/pricing"); // redirect to the feed
     })
     .catch((error) => {
       console.log(error);
@@ -176,12 +159,12 @@ const login = () => {
     });
 };
 
-function switchPanel() {
+const switchPanel = () => {
   error_message.value = "";
   container.classList.toggle("right-panel-active");
-}
+};
 
-function isMobile() {
+const isMobile = () => {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -191,7 +174,7 @@ function isMobile() {
   } else {
     return false;
   }
-}
+};
 </script>
 
 <style scoped>

@@ -15,8 +15,15 @@
           <li style="border-right: 1px solid #4d4643; padding-right: 20px">
              
           </li>
-          <li><a href="/login">Register</a></li>
-          <li><a href="/login">Login</a></li>
+          <li v-if="isLoggedIn && !isAdmin">
+            <a href="/#">{{ userName }}</a>
+          </li>
+          <li v-if="isAdmin">
+            <a href="/admin">Admin</a>
+          </li>
+          <li v-if="isLoggedIn"><a href="/#" @click="signOut">Logout</a></li>
+                    <li v-if="!isLoggedIn"><a href="/login">Register</a></li>
+          <li v-if="!isLoggedIn"><a href="/login">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -26,9 +33,41 @@
   <!-- End Header -->
 </template>
 
-<script>
-export default {
-  name: "HeaderMain",
+<script setup>
+import { ref } from "vue"; // used for conditional rendering
+import firebase from "firebase";
+import { useRouter } from "vue-router";
+const router = useRouter();
+const isLoggedIn = ref(false);
+const isAdmin = ref(false);
+const userName = ref("");
+
+// runs after firebase is initialized
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    isLoggedIn.value = true;
+    if (user.uid == "XzRZZ7aJuCdGeNnvmJdNlXpy9uz2") {
+      isAdmin.value = true;
+    } else {
+      setUserName(user.email);
+    }
+  }
+});
+
+const signOut = () => {
+  firebase.auth().signOut();
+  isLoggedIn.value = false;
+  isAdmin.value = false;
+  router.push("/");
+};
+
+const setUserName = (userEmail) => {
+  for (let i = 0; i < userEmail.length; i++) {
+    if (userEmail[i] == "@") {
+      break;
+    }
+    userName.value += userEmail[i];
+  }
 };
 </script>
 
@@ -108,7 +147,8 @@ export default {
 .navbar li {
   position: relative;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -121,12 +161,16 @@ export default {
   text-transform: uppercase;
   transition: 0.3s;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #c1121f;
 }
 .navbar .dropdown ul {
@@ -157,7 +201,9 @@ export default {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #c1121f;
 }
 .navbar .dropdown:hover > ul {
@@ -177,7 +223,7 @@ export default {
   visibility: visible;
 }
 
-#navbar_logo{
+#navbar_logo {
   height: 100px;
   width: auto;
 }
@@ -190,7 +236,6 @@ export default {
     left: -100%;
   }
 }
-
 
 /**
 * Mobile Navigation 
@@ -244,15 +289,19 @@ export default {
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #111;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #c1121f;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -275,7 +324,9 @@ export default {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #c1121f;
 }
 .navbar-mobile .dropdown > .dropdown-active {

@@ -1,4 +1,4 @@
-<template>
+<template >
   <div>
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -17,7 +17,7 @@
       <div class="container">
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
-            <form class="php-email-form">
+            <form class="php-email-form" v-if="isAdmin">
               <div class="add-car">
                 <h1>ADD CAR</h1>
                 <img src="@\assets\img\cta-add-cars.png" />
@@ -42,7 +42,7 @@
                     id="price"
                     placeholder="Base Price"
                     v-model="basePrice"
-                    style="width: 350px"
+                    style="width: 350px; padding-left: 10px"
                   />
                 </div>
                 <br />
@@ -62,6 +62,11 @@
               </div>
             </form>
           </div>
+          <div v-if="!isAdmin">
+            <h1 style="height: 40vh; text-align: center">
+              You do not have access to this page.
+            </h1>
+          </div>
         </div>
       </div>
     </section>
@@ -74,8 +79,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      model:'',
-      imageUrl: '',
+      model: "",
+      imageUrl: "",
       basePrice: 0,
     };
   },
@@ -87,7 +92,7 @@ export default {
           {
             imageUrl: this.imageUrl,
             basePrice: this.basePrice,
-            model: this.model
+            model: this.model,
           }
         )
         .then((res) => console.log(res.data.imageUrl));
@@ -95,6 +100,25 @@ export default {
   },
 };
 </script>
+
+<script setup>
+import firebase from "firebase";
+import { onBeforeUnmount } from "vue";
+import { ref } from "vue"; // used for conditional rendering
+
+const isAdmin = ref(false);
+
+const authListener = firebase.auth().onAuthStateChanged(function (user) {
+  if (user && user.uid == "XzRZZ7aJuCdGeNnvmJdNlXpy9uz2") {
+    isAdmin.value = true;
+  }
+});
+
+onBeforeUnmount(() => {
+  authListener();
+});
+</script>
+
 
 <style scoped>
 /*--------------------------------------------------------------
