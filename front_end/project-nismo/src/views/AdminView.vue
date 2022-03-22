@@ -24,11 +24,22 @@
               </div>
               <div class="add-car-form">
                 <div>
+                  <label>Model Name:</label>
+                  <br />
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder=""
+                    v-model="model"
+                    style="width: 350px"
+                  />
+                </div>
+                <div>
                   <label>Base Price:</label>
                   <br />
                   <input
                     type="number"
-                    id="name"
+                    id="price"
                     placeholder="Base Price"
                     v-model="basePrice"
                     style="width: 350px"
@@ -63,7 +74,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      imageUrl: "",
+      model:'',
+      imageUrl: '',
       basePrice: 0,
     };
   },
@@ -75,6 +87,7 @@ export default {
           {
             imageUrl: this.imageUrl,
             basePrice: this.basePrice,
+            model: this.model
           }
         )
         .then((res) => console.log(res.data.imageUrl));
@@ -84,11 +97,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "NissanOpti";
-  src: local("NissanOpti"),
-    url(@/assets/fonts/NissanOpti.otf) format("truetype");
-}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/

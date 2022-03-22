@@ -279,9 +279,9 @@ input {
   font-size: 14px;
 }
 
-.input-error{
+.input-error {
   border: 1px solid #c1121f;
-  background-color: #ff00112c ;
+  background-color: #ff00112c;
 }
 
 .container {

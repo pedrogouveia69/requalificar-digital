@@ -12,8 +12,10 @@
 
     <div v-for="(item, id) in carList" :key="id">
       <section id="street-flex">
-        <img id="street-car" :src="item.imageUrl" style="width:630px"/>
+        <h1 style="text-transform: uppercase">{{ item.model }}</h1>
+        <img id="street-car" :src="item.imageUrl" style="width: 630px" />
       </section>
+
       <!-- End Hero -->
       <!-- ======= Pricing Section ======= -->
       <section id="pricing" class="pricing">
@@ -21,8 +23,8 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
               <div class="box featured">
-                <h3>Business</h3>
-                <h4><sup>$</sup>{{item.basePrice}}</h4>
+                <h3>Base</h3>
+                <h4><sup>$</sup>{{ item.basePrice }}</h4>
                 <ul>
                   <li>Aida dere</li>
                   <li>Nec feugiat nisl</li>
@@ -38,8 +40,8 @@
 
             <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
               <div class="box">
-                <h3>Developer</h3>
-                <h4><sup>$</sup>{{item.basePrice * 1.3}}</h4>
+                <h3>Sport</h3>
+                <h4><sup>$</sup>{{ item.basePrice * 1.3 }}</h4>
                 <ul>
                   <li>Aida dere</li>
                   <li>Nec feugiat nisl</li>
@@ -55,9 +57,9 @@
 
             <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
               <div class="box">
-                <span class="advanced">Advanced</span>
-                <h3>Ultimate</h3>
-                <h4><sup>$</sup>{{item.basePrice * 1.6}}</h4>
+                <span class="advanced">  Track Ready</span>
+                <h3>Sport+</h3>
+                <h4><sup>$</sup>{{ item.basePrice * 1.6 }}</h4>
                 <ul>
                   <li>Aida dere</li>
                   <li>Nec feugiat nisl</li>
@@ -313,7 +315,7 @@ export default {
   right: -68px;
   transform: rotate(45deg);
   z-index: 1;
-  font-size: 14px;
+  font-size: 11px;
   padding: 1px 0 3px 0;
   background: #c1121f;
   color: #fff;
@@ -323,6 +325,9 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
+h1{
+  font-family: 'NissanOpti'}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -398,6 +403,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #street-car {
