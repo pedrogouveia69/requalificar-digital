@@ -31,7 +31,7 @@
                     id="name"
                     placeholder=""
                     v-model="model"
-                    style="width: 350px"
+                    style="width: 20vw; padding-left: 10px"
                   />
                 </div>
                 <div>
@@ -42,7 +42,7 @@
                     id="price"
                     placeholder="Base Price"
                     v-model="basePrice"
-                    style="width: 350px; padding-left: 10px"
+                    style="width: 20vw; padding-left: 10px"
                   />
                 </div>
                 <br />
@@ -52,7 +52,7 @@
                   <textarea
                     rows="5"
                     v-model="imageUrl"
-                    style="width: 350px"
+                    style="width: 20vw; padding-left: 10px"
                   ></textarea>
                 </div>
                 <br />
