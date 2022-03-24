@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "88900eee-38d8-4575-812c-b4df9d827177": {
+      "ProjectGuid": "88900eee-38d8-4575-812c-b4df9d827177",
+      "DisplayName": "Ficha14",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
