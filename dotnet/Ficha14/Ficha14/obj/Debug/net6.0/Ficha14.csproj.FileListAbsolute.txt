@@ -55,3 +55,4 @@ C:\Users\Net04\Desktop\repos\dotnet\Ficha14\Ficha14\obj\Debug\net6.0\Ficha14.dll
 C:\Users\Net04\Desktop\repos\dotnet\Ficha14\Ficha14\obj\Debug\net6.0\ref\Ficha14.dll
 C:\Users\Net04\Desktop\repos\dotnet\Ficha14\Ficha14\obj\Debug\net6.0\Ficha14.pdb
 C:\Users\Net04\Desktop\repos\dotnet\Ficha14\Ficha14\obj\Debug\net6.0\Ficha14.genruntimeconfig.cache
+C:\Users\Net04\Desktop\repos\dotnet\Ficha14\Ficha14\obj\Debug\net6.0\Ficha14.csproj.AssemblyReference.cache

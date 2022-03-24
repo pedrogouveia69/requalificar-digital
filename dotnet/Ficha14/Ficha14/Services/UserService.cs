@@ -18,6 +18,12 @@ namespace Ficha14.Services
 
         }
 
+        public User FindByName(string userName)
+        {
+            var user = context.Users.FirstOrDefault(u => u.UserName == userName);
+            return user;
+        }
+
         public User? Get(string userName, string password)
         {
             var user = context.Users.FirstOrDefault(u => u.UserName == userName && u.Password == password);

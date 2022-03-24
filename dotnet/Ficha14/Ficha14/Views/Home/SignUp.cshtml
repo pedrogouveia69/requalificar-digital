@@ -1,6 +1,6 @@
 ﻿@model Ficha14.Models.User
 @{
-    ViewData["Title"] = "Sign UP";
+    ViewData["Title"] = "Sign Up";
 }
 <h1>@ViewData["Title"]</h1>
 <hr />
@@ -19,7 +19,17 @@
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary" />
+                <label asp-for="Role" class="control-label"></label>
+                <input asp-for="Role" class="form-control" />
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" type="email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up" class="btn btn-primary" />
             </div>
         </form>
     </div>

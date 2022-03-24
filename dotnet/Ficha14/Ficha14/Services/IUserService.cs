@@ -6,5 +6,7 @@ namespace Ficha14.Services
     {
         public abstract User? Get(string userName, string password);
         public abstract User Create(User user);
+
+        public abstract User FindByName(string name);
     }
 }

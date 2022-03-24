@@ -6,7 +6,6 @@ using System.Diagnostics;
 
 namespace Ficha14.Controllers
 {
-
     public class HomeController : Controller
     {
         private readonly IConfiguration config;
@@ -36,6 +35,28 @@ namespace Ficha14.Controllers
         public IActionResult SignUp()
         {
             return View();
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> SignUp(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                var userExists = userService.FindByName(user.UserName);
+                if (userExists != null)
+                    return StatusCode(StatusCodes.Status500InternalServerError, "User already exists!");
+
+                var newUser = userService.Create(user);
+                if (newUser is not null)
+                    return RedirectToAction(nameof(Index));
+                else
+                    return RedirectToAction(nameof(Error));
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error));
+            }
         }
 
         [AllowAnonymous]
