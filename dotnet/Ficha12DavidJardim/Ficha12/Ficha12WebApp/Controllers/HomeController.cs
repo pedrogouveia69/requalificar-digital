@@ -82,10 +82,12 @@ namespace Ficha12WebApp.Controllers
             }
         }
 
-        public IActionResult Edit()
+        public IActionResult Edit(string isbn)
         {
-            return View();
+            var book = service.GetByISBN(isbn);
+            return View(book);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Edit(string isbn, Book book)
@@ -102,5 +104,30 @@ namespace Ficha12WebApp.Controllers
                 return RedirectToAction(nameof(Error));
             }
         }
+        public IActionResult Delete(string isbn)
+        {
+            var book = service.GetByISBN(isbn);
+            return View(book);
+        }
+
+        
+        public async Task<IActionResult> DeleteBook(string isbn)
+        {
+            if (ModelState.IsValid)
+            {
+                service.DeleteByISBN(isbn);
+
+                return RedirectToAction(nameof(Index));
+
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error));
+            }
+        }
+        
+
+
+
     }
 }
