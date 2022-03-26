@@ -1,14 +1,11 @@
 <template >
   <div>
     <!-- ======= Breadcrumbs ======= -->
+    <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Contact</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Contact</li>
-          </ol>
+          <h2> </h2>
         </div>
       </div>
     </section>
@@ -17,50 +14,34 @@
       <div class="container">
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
-            <form class="php-email-form" v-if="isAdmin">
+            <div class="php-email-form" v-if="isAdmin">
               <div class="add-car">
                 <h1>ADD CAR</h1>
-                <img src="@\assets\img\cta-add-cars.png" />
+                <img id="add-car" src="@\assets\img\cta-add-cars.png" />
               </div>
               <div class="add-car-form">
                 <div>
                   <label>Model Name:</label>
                   <br />
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder=""
-                    v-model="model"
-                    style="width: 20vw; padding-left: 10px"
-                  />
+                  <input type="text" id="name" v-model="model" />
                 </div>
                 <div>
                   <label>Base Price:</label>
                   <br />
-                  <input
-                    type="number"
-                    id="price"
-                    placeholder="Base Price"
-                    v-model="basePrice"
-                    style="width: 20vw; padding-left: 10px"
-                  />
+                  <input type="number" id="price" v-model="basePrice" />
                 </div>
                 <br />
                 <div>
                   <label>Image URL:</label>
                   <br />
-                  <textarea
-                    rows="5"
-                    v-model="imageUrl"
-                    style="width: 20vw; padding-left: 10px"
-                  ></textarea>
+                  <textarea rows="5" v-model="imageUrl"></textarea>
                 </div>
                 <br />
                 <div>
                   <button type="submit" @click="postToFirebase">Submit</button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
           <div v-if="!isAdmin">
             <h1 style="height: 40vh; text-align: center">
@@ -95,7 +76,12 @@ export default {
             model: this.model,
           }
         )
-        .then((res) => console.log(res.data.imageUrl));
+        .then(
+          () => alert("Car added successfully!"),
+          (this.imageUrl = ""),
+          (this.basePrice = 0),
+          (this.model = "")
+        );
     },
   },
 };
@@ -126,6 +112,12 @@ onBeforeUnmount(() => {
 --------------------------------------------------------------*/
 h1 {
   font-family: "NissanOpti";
+}
+
+input,
+textarea {
+  width: 20vw;
+  padding-left: 10px;
 }
 
 .contact .info-wrap {
@@ -253,21 +245,25 @@ h1 {
   align-items: center;
   width: 500px;
 }
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+#add-car {
+  width: 100%;
 }
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+
+@media (max-width: 600px) {
+  #add-car {
+    width: 100vw;
   }
-  100% {
-    transform: rotate(360deg);
+  .contact .php-email-form {
+    margin-top: -95px;
+    flex-direction: column;
+  }
+  .add-car-form {
+    width: 100vw;
+    margin-left: -15%;
+  }
+  input,
+  textarea {
+    width: 80vw;
   }
 }
 </style>

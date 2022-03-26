@@ -16,7 +16,7 @@
              
           </li>
           <li v-if="isLoggedIn && !isAdmin">
-            <a href="/#">{{ userName }}</a>
+            <a role="link" aria-disabled="true">{{ userName }}</a>
           </li>
           <li v-if="isAdmin">
             <a href="/admin">Admin</a>

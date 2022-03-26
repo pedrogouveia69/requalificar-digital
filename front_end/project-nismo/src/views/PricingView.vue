@@ -4,7 +4,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Pricing</h2>
+          <h2> </h2>
         </div>
       </div>
     </section>
@@ -13,7 +13,7 @@
     <div v-for="(item, id) in carList" :key="id">
       <section id="street-flex">
         <h1 style="text-transform: uppercase">{{ item.model }}</h1>
-        <img id="street-car" :src="item.imageUrl" style="width: 630px" />
+        <img id="street-car" :src="item.imageUrl" />
       </section>
 
       <!-- End Hero -->
@@ -437,5 +437,12 @@ h1 {
 #street-car {
   padding: 0;
   margin: 0;
+  width: 630px;
+}
+
+@media (max-width: 630px) {
+  #street-car {
+    width: 100vw;
+  }
 }
 </style>

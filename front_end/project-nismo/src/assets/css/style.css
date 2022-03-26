@@ -79,38 +79,13 @@ section {
   font-weight: 300;
   color: #fff;
 }
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-}
-.breadcrumbs ol a {
-  color: #fff;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #fff;
-  content: "/";
-}
+
 @media (max-width: 991px) {
   .breadcrumbs {
     margin-top: 58px;
   }
   .breadcrumbs .d-flex {
     display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
   }
 }
 
