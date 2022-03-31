@@ -104,14 +104,17 @@ namespace Ficha12WebApp.Controllers
                 return RedirectToAction(nameof(Error));
             }
         }
+
+        /*
         public IActionResult Delete(string isbn)
         {
             var book = service.GetByISBN(isbn);
             return View(book);
         }
+        */
 
         
-        public async Task<IActionResult> DeleteBook(string isbn)
+        public async Task<IActionResult> Delete(string isbn)
         {
             if (ModelState.IsValid)
             {
